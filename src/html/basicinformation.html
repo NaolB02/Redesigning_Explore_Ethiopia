@@ -5,62 +5,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic information</title>
+
+    <link rel="stylesheet" href="../css/basic.css">
+    <script src="../scripts/basic.js" defer></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
 </head>
 <body>
     <header>
         <!--The logo of the site-->
-        <div>
-            <img src="../images/Explore Ethiopia.png" alt="" width="50px" height="50px"
-            alt="main-logo">
-            <h1>Explore Ethiopia</h1>
-        </div>
-
-        <!--the nav bar of the site-->
         <nav>
-            <a href="./home.html">Home</a>
+            <div class="topnav" id="mytopnav">
+                <div href="#" class="logo_div"><img src="../images/Explore Ethiopia.png" alt="" width="48px" height="48px"></div>
 
-            <a href="./exploreethiopia.html">Explore Ethiopia</a>
-
-            <a href="./experiences.html">Experiences</a>
-
-            <a href="./basicinformation.html">Basic information</a>
-
-            <a href="./planning.html">Planning</a>
-
-            <a href="./aboutus.html">About us</a>
-
-            <a href="./contactus.html">Contact us</a>
+                <a href="../html/contactus.html">Contact Us</a>
+                <a href="../html/aboutus.html">About Us</a>
+                <a href="../html/planning.html">Planning</a>
+                <a href="../html/basicinformation.html">Basic Information</a>
+                <a href="../html/experiences.html">Experiences</a>
+                <a href="../html/exploreethiopia.html">Explore Ethiopia</a>
+                <a href="../html/home.html" class="active">Home</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                  </a>
+            </div>
         </nav>
     </header>
 
     <main>
-        <section>
-            <img src="../images/greeting-main.jpg" alt="people greeting" width="300px" height="300px">
-
-            <div>
+        <div class="topdiv">
+            <h1 class="main_title">Commom Greetings</h1>
+        </div>
+            
+        <div class="note_part">
+            <div class="text">
                 <h2>List of Common Greetings</h2>
-    
-                <ol>
-                    <li>Good Morning----------Dehna aderk  <span><audio src="../audios/audio-1.ogg" controls>
-                        <track src="../subtitle/video1.vtt" kind="subtitles" srclang="en" label="English">
-
-                    </audio></span></li>
-                    <li>Good Evening ----------Dehna Ameshek <span><audio src="../audios/audio-2.ogg" controls>
-                        <track src="../subtitle/video1.vtt" kind="subtitles" srclang="en" label="English">
-                    </audio></span></li>
-                    <li>Good night---------------Dehna eder <span><audio src="../audios/audio-3.ogg" controls>
-                        <track src="../subtitle/video1.vtt" kind="subtitles" srclang="en" label="English">
-                    </audio></span></li>
-                </ol>
             </div>
-        </section>
+            
+            <table>
+              <tr>
+                <td>Good Morning</td>
+                <td>Dehna aderk</td>
+                <td><audio src="../audios/audio-1.ogg" controls></td>
+              </tr>
+              <tr>
+                <td>Good Evening</td>
+                <td>Dehna Ameshek</td>
+                <td><audio src="../audios/audio-2.ogg" controls></td>
+              </tr>
+              <tr>
+                <td>Good night</td>
+                <td>Dehna Ameshek</td>
+                <td><audio src="../audios/audio-3.ogg" controls>
+                </audio></td>
+              </tr>
+            </table>
+
+        </div>
+
+        <div class="middiv">
+            <div class="text">
+                <h1 class="main_title">Commom Traditions</h1>
+            </div>
+            
+        </div>
+
         <section>
-            <img src="../images/tradition-img.jpg" alt="traditions" width="300px" height="300px">
-            <div>
-                <h2>Common Traditions</h2>
+            <div class="note_part">
+                <h1>Ethiopian Tradition</h1>
                 <p>
                     The customs of Ethiopia continue to be deeply rooted in centuries of practice, and many aspects of daily life are ritualised. For example, there is a correct and traditional way to serve coffee, fold a dress, cut chicken and greet people. The country also has its own ancient alphabet and calendar that are still in use.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores repudiandae repellat magni architecto cum omnis voluptates officia quaerat debitis sapiente optio eveniet at soluta sint, numquam error inventore ut, exercitationem commodi nobis, rerum nulla quia. Nam natus rem ex odio modi, eos accusamus harum consequatur, esse minus quam vitae iste, id obcaecati. Quasi, numquam omnis, error exercitationem a cumque reiciendis non illo reprehenderit expedita natus laborum molestiae accusantium facilis. Natus, soluta ea. Eaque quos fugit fugiat corrupti voluptate mollitia, aspernatur, incidunt tempore aut culpa unde saepe quas porro ea alias accusantium. Praesentium nulla facilis ducimus totam blanditiis placeat iusto rerum.
                 </p>
             </div>
         </section>
@@ -69,21 +87,22 @@
 
     <footer>
         <div>
-            <h3>About this site</h3>
+            <h3> Explore Ethiopia.Copyright <span></span> 2023. All rights reserved.</h3>
             <ul>
                 <li><a href="#">Privacy Policy</a></li>
                 <li><a href="#">Terms of use</a></li>
             </ul>
 
-            <div class="social-links">
-                <a href="#">Instagram</a>
-                <a href="#">Twitter</a>
-                <a href="#">Facebook</a>
-                <a href="#">Telegram</a>
+            <div>
+                <a href ="#"><i class="fa-brands fa-facebook icon"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram icon"></i></a>
+                <a href="#"><i class="fa-brands fa-telegram icon"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter icon"></i></a> 
             </div>
 
-            <h4> Explore Ethiopia.Copyright 2023. All rights reserved.</h4>
         </div>
+        
+
     </footer>
 </body>
 </html>

@@ -6,9 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore Ethiopia</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
 
 
     <link rel="stylesheet" href="./bootstrap.min.css">
@@ -18,7 +17,7 @@
         body {
             overflow-x: hidden;
         }
-
+        
         .map-container a {
             text-decoration: none;
             color: black;
@@ -26,9 +25,8 @@
             font-size: large;
             /* text-shadow: 2px 2px 2px 2px white; */
             font-weight: bold;
-
         }
-
+        
         .map-container {
             width: 100vw;
             height: 90vh;
@@ -38,59 +36,80 @@
             background-repeat: no-repeat;
             position: relative;
             background-color: white;
-
         }
-
+        
         .map-container img {
             width: 100%;
             height: 100%;
         }
-
+        
         .seimen {
             position: absolute;
             top: 20%;
             left: 25%;
         }
-
+        
         .bale {
             position: absolute;
             top: 70%;
             left: 25%;
         }
-
+        
         .omo {
             position: absolute;
             bottom: 10%;
             left: 55%;
         }
-
+        
         .axum {
             position: absolute;
             top: 10%;
             left: 45%;
         }
-
+        
         .danakil {
             position: absolute;
             top: 55%;
             left: 70%;
         }
-
+        
         .lalibela {
             position: absolute;
             top: 35%;
             left: 46%;
         }
         
-
-        .col-md-4{
+        .col-md-4 {
             height: 220px;
         }
-
-        main img{
+        
+        main img {
             display: block;
             width: 100%;
             max-height: 100%;
+        }
+        
+        .navbar-nav>li {
+            height: 60px;
+            /* margin-left:30px;
+    margin-right:30px; */
+            margin: 0 30px;
+        }
+        
+        .navbar-nav>li:nth-child(2) {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        .navbar-nav>li:nth-child(2)::after {
+            content: '';
+            width: 0;
+            height: 3px;
+            background: lightpink;
+            display: block;
+            margin: auto;
+            width: 100%;
+            transition: 0.5s;
         }
     </style>
 
@@ -101,38 +120,36 @@
         <!--The logo of the site-->
         <!--the nav bar of the site-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark container">
-  <a class="navbar-brand" href="#"><img src="./images/Explore Ethiopia.png" alt="" width="48px"
-    height="48px"></a>
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#"><img src="./images/Explore Ethiopia.png" alt="" width="48px" height="48px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav mx-auto">
-        <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="./index.html">Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-white" href="./exploreethiopia.html">Explore Ethiopia</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-white" href="./experiences.html">Experiences</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-white" href="./basicinformation.html">Basic Info</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-white" href="./planning.html">Planning</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-white" href="./contactus.html">Contact Us</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-white" href="./aboutus.html">About Us</a>
-        </li>
-    </ul>
-  </div>
-</nav>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./exploreethiopia.html">Explore Ethiopia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./experiences.html">Experiences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./basicinformation.html">Basic Info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./planning.html">Planning</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./contactus.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./aboutus.html">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
     <!-- Here is the map of ethiopia with links on hotspots-->
 
@@ -165,253 +182,221 @@
             <div id="lalibela">
                 <h2>Lalibela</h2>
                 <p>
-                    Lalibela is one of Ethiopia's most magical destinations. For many, it is the absolute highlight of
-                    their journey across Ethiopia.
-                    Mountaintop vistas where countryside extends as far as the eye can see, only to be broken by the
-                    rise of jagged peaks on the horizon.
-                    The quiet of a countryside walk swiftly juxtaposed by the chaos of a weekly market.
-                    Pilgrims adorned in white robes joining together in prayer and song, their voices heard in the
-                    farthest corners of the town.
-                    The kindness of a local priest, who upon noticing you, brings you a gown as the service begins.
+                    Lalibela is one of Ethiopia's most magical destinations. For many, it is the absolute highlight of their journey across Ethiopia. Mountaintop vistas where countryside extends as far as the eye can see, only to be broken by the rise of jagged peaks on
+                    the horizon. The quiet of a countryside walk swiftly juxtaposed by the chaos of a weekly market. Pilgrims adorned in white robes joining together in prayer and song, their voices heard in the farthest corners of the town. The kindness
+                    of a local priest, who upon noticing you, brings you a gown as the service begins.
                 </p>
 
 
                 <div class="container">
                     <div class="row">
-                      <div class="col-md-4">
-                        <img src="./images/lalibel-main.jpg" class="img-fluid" alt="Image 1">
-                      </div>
-                      <div class="col-md-4">
-                        <img src="images/lalibela-book.avif" class="img-fluid" alt="Image 2">
-                      </div>
-                      <div class="col-md-4">
-                        <img src="./images/lalibela-wall.avif" class="img-fluid" alt="Image 3">
-                      </div>
-                    </div>
-                </div>
-
-        
-        <!-- Modal gallery -->
-        <div id="simien">
-            <h2>Simien Mountains National Park</h2>
-            <p>
-                The Simien Mountains are one of Ethiopia’s most popular destinations. Sitting just north of
-                Gondar, it’s easily accessible along the northern circuit of Ethiopia. Comprising 220 square
-                kilometres of peaks, plateaus, vistas and valleys, the park offers stunning viewpoints and some
-                of the best trekking routes in Africa.
-            </p>
-
-            <div class="container">
-                <div class="row">
-                  <div class="col-md-4">
-                    <img src="./images/simein-main.avif" class="img-fluid" alt="Image 1">
-                  </div>
-                  <div class="col-md-4">
-                    <img src="images/simein-monkey.avif" class="img-fluid" alt="Image 2">
-                  </div>
-                  <div class="col-md-4">
-                    <img src="./images/simein-people.avif" class="img-fluid" alt="Image 3">
-                  </div>
-                </div>
-            </div>
-
-
-            <div id="danakil">
-                <h2>Danakil Depression</h2>
-                <p>
-                    The Danakil Depression formed from the continental drift of the African and Asian tectonic
-                    plates. As the plates drifted apart at a rate of 1-2 cm per year, they leave behind a
-                    geological depression, known as the Danakil Depression (or Afar Depression).
-
-                    The Afar Depression spans Djibouti, Eritrea, and the Afar region of Ethiopia. The Northern
-                    part of this depression is the Danakil Depression, which sits more than 100m below sea level
-                    and contains some of the world’s most extraterrestrial landscapes.
-                </p>
-
-                <div class="container">
-                    <div class="row">
-                      <div class="col-md-4">
-                        <img src="./images/danakil-main.avif" class="img-fluid" alt="Image 1">
-                      </div>
-                      <div class="col-md-4">
-                        <img src="images/danakil-2.avif" class="img-fluid" alt="Image 2">
-                      </div>
-                      <div class="col-md-4">
-                        <img src="./images/danakil-3.avif" class="img-fluid" alt="Image 3">
-                      </div>
+                        <div class="col-md-4">
+                            <img src="./images/lalibel-main.jpg" class="img-fluid" alt="Image 1">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="images/lalibela-book.avif" class="img-fluid" alt="Image 2">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="./images/lalibela-wall.avif" class="img-fluid" alt="Image 3">
+                        </div>
                     </div>
                 </div>
 
 
-                <div id="axum">
-                    <h2>Axum</h2>
+                <!-- Modal gallery -->
+                <div id="simien">
+                    <h2>Simien Mountains National Park</h2>
                     <p>
-                        As the home to the Queen of Sheba and (as the story goes) the Ark of the Covenant the
-                        storied artefact of Moses’ 10 commandments – Axum is one of the oldest continuously
-                        inhabited cities in northern African, dating back to 400 BC.
-
-                        In the same area, researchers have uncovered a number of tombs in Axum since the 1970s,
-                        but sadly many had been plundered by tomb raiders and only one such grave, The Tomb of
-                        the False Door, is now open to visitors.
+                        The Simien Mountains are one of Ethiopia’s most popular destinations. Sitting just north of Gondar, it’s easily accessible along the northern circuit of Ethiopia. Comprising 220 square kilometres of peaks, plateaus, vistas and valleys, the park offers
+                        stunning viewpoints and some of the best trekking routes in Africa.
                     </p>
 
                     <div class="container">
                         <div class="row">
-                          <div class="col-md-4">
-                            <img src="./images/Axum-main.avif" class="img-fluid" alt="Image 1">
-                          </div>
-                          <div class="col-md-4">
-                            <img src="images/axum-2.avif" class="img-fluid" alt="Image 2">
-                          </div>
-                          <div class="col-md-4">
-                            <img src="./images/Axum-3.avif" class="img-fluid" alt="Image 3">
-                          </div>
+                            <div class="col-md-4">
+                                <img src="./images/simein-main.avif" class="img-fluid" alt="Image 1">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="images/simein-monkey.avif" class="img-fluid" alt="Image 2">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="./images/simein-people.avif" class="img-fluid" alt="Image 3">
+                            </div>
                         </div>
                     </div>
-    
+
 
                     <div id="danakil">
                         <h2>Danakil Depression</h2>
                         <p>
-                            The Danakil Depression formed from the continental drift of the African and Asian
-                            tectonic plates. As the plates drifted apart at a rate of 1-2 cm per year, they
-                            leave behind a geological depression, known as the Danakil Depression (or Afar
-                            Depression).
-
-                            The Afar Depression spans Djibouti, Eritrea, and the Afar region of Ethiopia. The
-                            Northern part of this depression is the Danakil Depression, which sits more than
-                            100m below sea level and contains some of the world’s most extraterrestrial
+                            The Danakil Depression formed from the continental drift of the African and Asian tectonic plates. As the plates drifted apart at a rate of 1-2 cm per year, they leave behind a geological depression, known as the Danakil Depression (or Afar Depression).
+                            The Afar Depression spans Djibouti, Eritrea, and the Afar region of Ethiopia. The Northern part of this depression is the Danakil Depression, which sits more than 100m below sea level and contains some of the world’s most extraterrestrial
                             landscapes.
                         </p>
 
                         <div class="container">
                             <div class="row">
-                              <div class="col-md-4">
-                                <img src="./images/lalibel-main.jpg" class="img-fluid" alt="Image 1">
-                              </div>
-                              <div class="col-md-4">
-                                <img src="images/lalibela-book.avif" class="img-fluid" alt="Image 2">
-                              </div>
-                              <div class="col-md-4">
-                                <img src="./images/lalibela-wall.avif" class="img-fluid" alt="Image 3">
-                              </div>
+                                <div class="col-md-4">
+                                    <img src="./images/danakil-main.avif" class="img-fluid" alt="Image 1">
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="images/danakil-2.avif" class="img-fluid" alt="Image 2">
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="./images/danakil-3.avif" class="img-fluid" alt="Image 3">
+                                </div>
                             </div>
                         </div>
-        
 
-                        <div id="bale">
-                            <h2>Bale Mountains National Park
-                            </h2>
+
+                        <div id="axum">
+                            <h2>Axum</h2>
                             <p>
-                                Rising over 4,000 metres, the Afro-Alpine plateau of the Bale Mountains is the
-                                highest mountainous area in southern Ethiopia.
-
-                                The beautiful Bale Mountain Lodge - nestled into the thickets of the Harenna
-                                Forest - is one Ethiopia's best boutique lodges. It's the perfect place to
-                                return for sun-downers by the roaring fire after a day's exploring.
+                                As the home to the Queen of Sheba and (as the story goes) the Ark of the Covenant the storied artefact of Moses’ 10 commandments – Axum is one of the oldest continuously inhabited cities in northern African, dating back to 400 BC. In the same area, researchers
+                                have uncovered a number of tombs in Axum since the 1970s, but sadly many had been plundered by tomb raiders and only one such grave, The Tomb of the False Door, is now open to visitors.
                             </p>
 
                             <div class="container">
                                 <div class="row">
-                                  <div class="col-md-4">
-                                    <img src="./images/bale-main.avif" class="img-fluid" alt="Image 1">
-                                  </div>
-                                  <div class="col-md-4">
-                                    <img src="images/bale-2.avif" class="img-fluid" alt="Image 2">
-                                  </div>
-                                  <div class="col-md-4">
-                                    <img src="./images/bale-3.avif" class="img-fluid" alt="Image 3">
-                                  </div>
+                                    <div class="col-md-4">
+                                        <img src="./images/Axum-main.avif" class="img-fluid" alt="Image 1">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="images/axum-2.avif" class="img-fluid" alt="Image 2">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="./images/Axum-3.avif" class="img-fluid" alt="Image 3">
+                                    </div>
                                 </div>
                             </div>
-            
 
-                        </div>
-                        <div id="omo">
-                            <h2>Omo valley
-                            </h2>
-                            <p>
-                                The Omo Valley, often more precisely called the Lower Omo Valley, is a place
-                                like no other. Home to a number of tribal communities, the variety and diversity
-                                of life - truly a melting pot of humanity - will blow you away. We think it's a
-                                must-visit if you want to understand Ethiopia and Africa more broadly.
 
-                                The concentration of experience and variety, often so juxtaposed to your own
-                                daily life, forces you to reflect on what it means to be human in today's world.
-                            </p>
+                            <div id="danakil">
+                                <h2>Danakil Depression</h2>
+                                <p>
+                                    The Danakil Depression formed from the continental drift of the African and Asian tectonic plates. As the plates drifted apart at a rate of 1-2 cm per year, they leave behind a geological depression, known as the Danakil Depression (or Afar Depression).
+                                    The Afar Depression spans Djibouti, Eritrea, and the Afar region of Ethiopia. The Northern part of this depression is the Danakil Depression, which sits more than 100m below sea level and contains some of the world’s
+                                    most extraterrestrial landscapes.
+                                </p>
 
-                            <div class="container">
-                                <div class="row">
-                                  <div class="col-md-4">
-                                    <img src="./images/omo-main.avif" class="img-fluid" alt="Image 1">
-                                  </div>
-                                  <div class="col-md-4">
-                                    <img src="images/Omo-2.avif" class="img-fluid" alt="Image 2">
-                                  </div>
-                                  <div class="col-md-4">
-                                    <img src="./images/omo-3.avif" class="img-fluid" alt="Image 3">
-                                  </div>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <img src="./images/lalibel-main.jpg" class="img-fluid" alt="Image 1">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <img src="images/lalibela-book.avif" class="img-fluid" alt="Image 2">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <img src="./images/lalibela-wall.avif" class="img-fluid" alt="Image 3">
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </section>
+
+
+                                <div id="bale">
+                                    <h2>Bale Mountains National Park
+                                    </h2>
+                                    <p>
+                                        Rising over 4,000 metres, the Afro-Alpine plateau of the Bale Mountains is the highest mountainous area in southern Ethiopia. The beautiful Bale Mountain Lodge - nestled into the thickets of the Harenna Forest - is one Ethiopia's best boutique lodges.
+                                        It's the perfect place to return for sun-downers by the roaring fire after a day's exploring.
+                                    </p>
+
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <img src="./images/bale-main.avif" class="img-fluid" alt="Image 1">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <img src="images/bale-2.avif" class="img-fluid" alt="Image 2">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <img src="./images/bale-3.avif" class="img-fluid" alt="Image 3">
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div id="omo">
+                                    <h2>Omo valley
+                                    </h2>
+                                    <p>
+                                        The Omo Valley, often more precisely called the Lower Omo Valley, is a place like no other. Home to a number of tribal communities, the variety and diversity of life - truly a melting pot of humanity - will blow you away. We think it's a must-visit if
+                                        you want to understand Ethiopia and Africa more broadly. The concentration of experience and variety, often so juxtaposed to your own daily life, forces you to reflect on what it means to be human in today's world.
+                                    </p>
+
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <img src="./images/omo-main.avif" class="img-fluid" alt="Image 1">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <img src="images/Omo-2.avif" class="img-fluid" alt="Image 2">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <img src="./images/omo-3.avif" class="img-fluid" alt="Image 3">
+                                            </div>
+                                        </div>
+                                    </div>
+        </section>
     </main>
 
     <footer class="" style="background-color: black;">
-    
-      <div class="text-center my-3 pe-5 ps-5 " style="font-weight: bold;">
-        
-          <div class="d-flex justify-content-around gap-2bg-dark pt-5" id="">
-            <div class=" mx-auto pt-3">
-              <a class="navbar-brand" href="#"><img src="./images/Explore Ethiopia.png" alt="" width="100px"
-                height="100px"></a>
-            </div>
-              <ul class=" mx-auto " style="list-style-type: none;">
-                <li class="nav-item" style="font-size: large;">
-                    <a class="nav-link active text-light" aria-current="page" href="./index.html">Home</a>
-                </li>
-                <li class="nav-item " >
-                    <a class="nav-link text-light" href="./exploreethiopia.html">Explore Ethiopia</a>
-                </li>
-                <li class="nav-item" >
-                    <a class="nav-link text-light" href="./experiences.html">Experiences</a>
-                </li>
-              </ul>
-              <ul class=" mx-auto" style="list-style-type: none;">
-                <li class="nav-item">
-                  <a class="nav-link text-light" style="font-size: large;" href="./contactus.html">Contact Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="./basicinformation.html">Basic Info</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="./planning.html">Planning</a>
-                </li>
-                
-              </ul>
-              <ul class=" mx-auto" style="list-style-type: none;">
-                <li class="nav-item">
-                    <a class="nav-link text-light" style="font-size: large;" href="./aboutus.html">About Us</a>
-                </li>
-                <li><a href="#" class="nav-link  text-light">Privacy Policy</a></li>
-                <li><a href="#" class="nav-link text-light">Terms of use</a></li>
-              </ul>
-              <div class="pt-5 p-5 me-5">
-                <!-- <p class="h3 text-white">Social</p> -->
-                <div class="fa-lg mt-0">
-                  <a href ="#" class=""><i class="fa-brands fa-facebook icon fa-xl"></i></a>
-                  <a href="#" class="ps-3"><i class="fa-brands fa-instagram icon fa-xl"></i></a>
-                  <a href="#" class="ps-3"><i class="fa-brands fa-telegram icon fa-xl"></i></a>
-                  <a href="#" class="ps-3"><i class="fa-brands fa-twitter icon fa-xl"></i></a> 
+
+        <div class="text-center my-3 pe-5 ps-5 " style="font-weight: bold;">
+
+            <div class="d-flex justify-content-around gap-2bg-dark pt-5" id="">
+                <div class=" mx-auto pt-3">
+                    <a class="navbar-brand" href="#"><img src="./images/Explore Ethiopia.png" alt="" width="100px" height="100px"></a>
                 </div>
-              </div>
-          </div>
-          <hr class="text-white mb-3 mt-4 m-5">
-          
-      </div>
-      <div class="text-center">
-        <h3 class="text-white justify-content-center h6 pb-1" style="font-family: 'Courier New', Courier, monospace;">&#169; Explore Ethiopia Copyright <span></span> 2023. All rights reserved.</h3>
-      </div>
-  </footer>
+                <ul class=" mx-auto " style="list-style-type: none;">
+                    <li class="nav-item" style="font-size: large;">
+                        <a class="nav-link active text-light" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-light" href="./exploreethiopia.html">Explore Ethiopia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="./experiences.html">Experiences</a>
+                    </li>
+                </ul>
+                <ul class=" mx-auto" style="list-style-type: none;">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" style="font-size: large;" href="./contactus.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="./basicinformation.html">Basic Info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="./planning.html">Planning</a>
+                    </li>
+
+                </ul>
+                <ul class=" mx-auto" style="list-style-type: none;">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" style="font-size: large;" href="./aboutus.html">About Us</a>
+                    </li>
+                    <li><a href="#" class="nav-link  text-light">Privacy Policy</a></li>
+                    <li><a href="#" class="nav-link text-light">Terms of use</a></li>
+                </ul>
+                <div class="pt-5 p-5 me-5">
+                    <!-- <p class="h3 text-white">Social</p> -->
+                    <div class="fa-lg mt-0">
+                        <a href="#" class=""><i class="fa-brands fa-facebook icon fa-xl"></i></a>
+                        <a href="#" class="ps-3"><i class="fa-brands fa-instagram icon fa-xl"></i></a>
+                        <a href="#" class="ps-3"><i class="fa-brands fa-telegram icon fa-xl"></i></a>
+                        <a href="#" class="ps-3"><i class="fa-brands fa-twitter icon fa-xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="text-white mb-3 mt-4 m-5">
+
+        </div>
+        <div class="text-center">
+            <h3 class="text-white justify-content-center h6 pb-1" style="font-family: 'Courier New', Courier, monospace;">&#169; Explore Ethiopia Copyright <span></span> 2023. All rights reserved.</h3>
+        </div>
+    </footer>
 </body>
 
 </html>

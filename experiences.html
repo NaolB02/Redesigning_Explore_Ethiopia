@@ -1,408 +1,437 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experiences</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
 
     <link rel="stylesheet" href="./bootstrap.min.css">
     <script src="./bootstrap.bundle.min.js" defer></script>
     <script src="./experience.js" defer></script>
 
     <style>
-        .row img{
+        .row img {
             display: block;
             width: 100%;
             height: 100%;
         }
-
-        .col-md-4{
+        
+        .col-md-4 {
             height: 220px;
         }
-        .carousel img{
+        
+        .carousel img {
             height: 80vh;
             max-height: 80vh;
         }
         
+        .navbar-nav>li {
+            height: 60px;
+            /* margin-left:30px;
+    margin-right:30px; */
+            margin: 0 30px;
+        }
+        
+        .navbar-nav>li:nth-child(3) {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        .navbar-nav>li:nth-child(3)::after {
+            content: '';
+            width: 0;
+            height: 3px;
+            background: lightpink;
+            display: block;
+            margin: auto;
+            width: 100%;
+            transition: 0.5s;
+        }
     </style>
-    
+
 </head>
+
 <body>
     <header>
         <!--The logo of the site-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark container">
-            <a class="navbar-brand" href="#"><img src="./images/Explore Ethiopia.png" alt="" width="48px"
-              height="48px"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#"><img src="./images/Explore Ethiopia.png" alt="" width="48px" height="48px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                           <span class="navbar-toggler-icon"></span>
                       </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav mx-auto">
-                  <li class="nav-item">
-                      <a class="nav-link active text-white" aria-current="page" href="./index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link text-white" href="./exploreethiopia.html">Explore Ethiopia</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link text-white" href="./experiences.html">Experiences</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link text-white" href="./basicinformation.html">Basic Info</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link text-white" href="./planning.html">Planning</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link text-white" href="./contactus.html">Contact Us</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link text-white" href="./aboutus.html">About Us</a>
-                  </li>
-              </ul>
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./exploreethiopia.html">Explore Ethiopia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./experiences.html">Experiences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./basicinformation.html">Basic Info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./planning.html">Planning</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./contactus.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./aboutus.html">About Us</a>
+                    </li>
+                </ul>
             </div>
-          </nav>
+        </nav>
 
     </header>
     <main>
         <div id="container" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class="d-block w-100" src= "./images/christmas-main.jpg" alt="First slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="./images/harrar-main.jpg" alt="Second slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="./images/march-main.jpg" alt="Third slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="./images/april-main.jpg" alt="Third slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="./images/april-main.jpg" alt="Third slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="./images/april-main.jpg" alt="Third slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="./images/april-main.jpg" alt="Third slide">
-              </div>
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="./images/christmas-main.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/harrar-main.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/march-main.jpg" alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/april-main.jpg" alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/april-main.jpg" alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/april-main.jpg" alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/april-main.jpg" alt="Third slide">
+                </div>
             </div>
-          </div>
+        </div>
 
-              <div class="btn-group w-100 flex-wrap" role="group">
-                <button type="button" class="btn btn-secondary" onclick="showimage(1)">January</button>
-                <button type="button" class="btn btn-secondary" onclick="showimage(2)">February</button>
-                <button type="button" class="btn btn-secondary" onclick="showimage(1)">March</button>
-                <button type="button" class="btn btn-secondary" onclick="showimage(3)">April</button>
-                <button type="button" class="btn btn-secondary" onclick="showimage(1)">May</button>
-                <button type="button" class="btn btn-secondary" onclick="showimage(4)">June</button>
-                <button type="button" class="btn btn-secondary" onclick="showimage(1)">July</button>
-                <button type="button" class="btn btn-secondary" onclick="showimage(3)">August</button>
-                <button type="button" class="btn btn-secondary" onclick="showimage(4)">September</button>
-                <button type="button" class="btn btn-secondary" onclick="showimage(5)">October</button>
-                <button type="button" class="btn btn-secondary" onclick="showimage(6)">November</button>
-                <button type="button" class="btn btn-secondary" onclick="showimage(4)">December</button>
-              </div>
+        <div class="btn-group w-100 flex-wrap" role="group">
+            <button type="button" class="btn btn-secondary" onclick="showimage(1)">January</button>
+            <button type="button" class="btn btn-secondary" onclick="showimage(2)">February</button>
+            <button type="button" class="btn btn-secondary" onclick="showimage(1)">March</button>
+            <button type="button" class="btn btn-secondary" onclick="showimage(3)">April</button>
+            <button type="button" class="btn btn-secondary" onclick="showimage(1)">May</button>
+            <button type="button" class="btn btn-secondary" onclick="showimage(4)">June</button>
+            <button type="button" class="btn btn-secondary" onclick="showimage(1)">July</button>
+            <button type="button" class="btn btn-secondary" onclick="showimage(3)">August</button>
+            <button type="button" class="btn btn-secondary" onclick="showimage(4)">September</button>
+            <button type="button" class="btn btn-secondary" onclick="showimage(5)">October</button>
+            <button type="button" class="btn btn-secondary" onclick="showimage(6)">November</button>
+            <button type="button" class="btn btn-secondary" onclick="showimage(4)">December</button>
+        </div>
 
         <section class="note_part container">
             <div id="January">
                 <h2>Gena</h2>
                 <p>
-                    Christmas in Ethiopia is called Ganna (or Genna) and is celebrated on January 7th. An important Ethiopian holiday, visitors in the country can get an insight into the religious traditions and culture of the African nation.
-                    Ganna comes 12 days before the Timkat festival, another important holiday. Travelers with an Ethiopian eVisa can spend up to 90 days in Ethiopia and are therefore able to enjoy both events on one trip.
+                    Christmas in Ethiopia is called Ganna (or Genna) and is celebrated on January 7th. An important Ethiopian holiday, visitors in the country can get an insight into the religious traditions and culture of the African nation. Ganna comes 12 days before the
+                    Timkat festival, another important holiday. Travelers with an Ethiopian eVisa can spend up to 90 days in Ethiopia and are therefore able to enjoy both events on one trip.
                 </p>
-                
+
                 <div class="container">
                     <div class="row">
-                      <div class="col-md-4">
-                        <img src="./images/christmas-main.jpg" class="img-fluid" alt="Image 1">
-                      </div>
-                      <div class="col-md-4">
-                        <img src="images/christmas-2.jpg" class="img-fluid" alt="Image 2">
-                      </div>
-                      <div class="col-md-4">
-                        <img src="./images/christmas-3.jpg" class="img-fluid" alt="Image 3">
-                      </div>
-                    </div>
-                </div>
-            <div id="February">
-                <h2>Harrar</h2>
-                <p>
-                    Harar is a city in eastern Ethiopia. It’s surrounded by a centuries-old defensive wall that has several large gates, including Duke's Gate. The city is known for its mazelike alleys and traditional houses decorated inside with flat hanging baskets. 
-                </p>
-                
-                <div class="container">
-                    <div class="row">
-                      <div class="col-md-4">
-                        <img src="./images/harrar-main.jpg" class="img-fluid" alt="Image 1">
-                      </div>
-                      <div class="col-md-4">
-                        <img src="images/harrar-main.jpg" class="img-fluid" alt="Image 2">
-                      </div>
-                      <div class="col-md-4">
-                        <img src="./images/harrar-main.jpg" class="img-fluid" alt="Image 3">
-                      </div>
-                    </div>
-                </div>
-            <div id="March">
-                <h2>Adwa</h2>
-                <p>
-                    Adwa is a town and separate woreda in Tigray Region, Ethiopia. It is best known as the community closest to the site of the 1896 Battle of Adwa, in which Ethiopian soldiers defeated Italian troops, thus being one of the few African nations to thwart European colonialism.
-                </p>
-                
-                <div class="container">
-                    <div class="row">
-                      <div class="col-md-4">
-                        <img src="./images/april-main.avif" class="img-fluid" alt="Image 1">
-                      </div>
-                      <div class="col-md-4">
-                        <img src="images/april-main.avif" class="img-fluid" alt="Image 2">
-                      </div>
-                      <div class="col-md-4">
-                        <img src="./images/april-main.avif" class="img-fluid" alt="Image 3">
-                      </div>
-                    </div>
-                </div>
-            <div id="April">
-                <h2>Easter</h2>
-                <p>
-                    “Fasika” is the Amharic word for Easter, and refers to the 55-days where Ethiopians celebrate their most important festival of the year. This festival, which celebrates the death and resurrection of Jesus Christ, is one of the most longstanding within the Ethiopian Orthodox Church.
-                </p>
-                
-                <div class="container">
-                    <div class="row">
-                      <div class="col-md-4">
-                        <img src="./images/june-main.jpg" class="img-fluid" alt="Image 1">
-                      </div>
-                      <div class="col-md-4">
-                        <img src="images/june-main.jpg" class="img-fluid" alt="Image 2">
-                      </div>
-                      <div class="col-md-4">
-                        <img src="./images/june-main.jpg" class="img-fluid" alt="Image 3">
-                      </div>
-                    </div>
-                </div>
-            <div id="May">
-                <h2>Omo valley
-                </h2>
-                <p>
-                    The lower Omo Valley of southern Ethiopia is home to some of the world's last unchanged cultural groups. The area is a melting pot of cultures and communities and represents some of the greatest genetic variance on the continent. Many describe the Omo as being the birthplace of mankind. It's not hard to see why.
-                </p>
-                
-                <div class="container">
-                    <div class="row">
-                      <div class="col-md-4">
-                        <img src="./images/omo-main.avif" class="img-fluid" alt="Image 1">
-                      </div>
-                      <div class="col-md-4">
-                        <img src="images/Omo-2.avif" class="img-fluid" alt="Image 2">
-                      </div>
-                      <div class="col-md-4">
-                        <img src="./images/omo-3.avif" class="img-fluid" alt="Image 3">
-                      </div>
-                    </div>
-                </div>
-            <div id="June">
-                <h2>The Mountains 
-                </h2>
-                <p>
-                    The most notable of these is the Simien Mountains, the highest point of which is Ras Dejen (or Dashen), 14,872 feet (4,533 metres) high. Other groups are the Ch'ok'ē Mountains, the Lasta and Amhara-Saint massifs, and the Gemu Massif. No peak in Ethiopia is permanently snow covered.                </p>
-                
-                    <div class="container">
-                        <div class="row">
-                          <div class="col-md-4">
-                            <img src="./images/november-main.jpg" class="img-fluid" alt="Image 1">
-                          </div>
-                          <div class="col-md-4">
-                            <img src="images/november-main.jpg" class="img-fluid" alt="Image 2">
-                          </div>
-                          <div class="col-md-4">
-                            <img src="./images/november-main.jpg" class="img-fluid" alt="Image 3">
-                          </div>
+                        <div class="col-md-4">
+                            <img src="./images/christmas-main.jpg" class="img-fluid" alt="Image 1">
                         </div>
-                    </div>
-            <div id="June">
-                <h2>Fasil Ginb
-                </h2>
-                <p>
-                    The Fasil Ghebbi is a fortress located in Gondar, Amhara Region, Ethiopia. It was founded in the 17th century by Emperor Fasilides and was the home of Ethiopian emperors. Its unique architecture shows diverse influences including Nubian, Indian, Arab, and Baroque characteristics.
-                </p>
-                
-                <div class="container">
-                    <div class="row">
-                      <div class="col-md-4">
-                        <img src="./images/june-main.jpg" class="img-fluid" alt="Image 1">
-                      </div>
-                      <div class="col-md-4">
-                        <img src="images/june-main.jpg" class="img-fluid" alt="Image 2">
-                      </div>
-                      <div class="col-md-4">
-                        <img src="./images/june-main.jpg" class="img-fluid" alt="Image 3">
-                      </div>
-                    </div>
-                </div>
-                    
-            <div id="July">
-                <h2>The Mountains
-                </h2>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae atque accusantium corrupti ullam omnis enim eos quidem expedita nam consectetur ut qui, necessitatibus quaerat quisquam at? In dicta veniam vel?
-                </p>
-                
-                <div class="container">
-                    <div class="row">
-                      <div class="col-md-4">
-                        <img src="./images/july-main.jpg" class="img-fluid" alt="Image 1">
-                      </div>
-                      <div class="col-md-4">
-                        <img src="images/july-main.jpg" class="img-fluid" alt="Image 2">
-                      </div>
-                      <div class="col-md-4">
-                        <img src="./images/july-main.jpg" class="img-fluid" alt="Image 3">
-                      </div>
-                    </div>
-                </div>
-            <div id="August">
-                <h2>Walias
-                </h2>
-                <p>
-                    Found in the eastern and western Highlands of Ethiopia, primarily in Simien Mountains National Park, the Walia Ibex - or Abyssinian Ibex - is a giant mountain goat and a subspecies of the Spanish ibex.     </p>
-                
-                    <div class="container">
-                        <div class="row">
-                          <div class="col-md-4">
-                            <img src="./images/august-main.avif" class="img-fluid" alt="Image 1">
-                          </div>
-                          <div class="col-md-4">
-                            <img src="images/august-main.avif" class="img-fluid" alt="Image 2">
-                          </div>
-                          <div class="col-md-4">
-                            <img src="./images/august-main.avif" class="img-fluid" alt="Image 3">
-                          </div>
+                        <div class="col-md-4">
+                            <img src="images/christmas-2.jpg" class="img-fluid" alt="Image 2">
                         </div>
-                    </div>
-            </div>
-            <div id="September">
-                <h2>Enkutatash
-                </h2>
-                <p>
-                    Enkutatash is a public holiday in coincidence of New Year in Ethiopia and Eritrea. It occurs on Meskerem 1 on the Ethiopian calendar, which is 11 September according to the Gregorian calendar.                 </p>
-                
-                    <div class="container">
-                        <div class="row">
-                          <div class="col-md-4">
-                            <img src="./images/new-year-main.jpg" class="img-fluid" alt="Image 1">
-                          </div>
-                          <div class="col-md-4">
-                            <img src="images/new-year-main.jpg" class="img-fluid" alt="Image 2">
-                          </div>
-                          <div class="col-md-4">
-                            <img src="./images/new-year-main.jpg" class="img-fluid" alt="Image 3">
-                          </div>
-                        </div>
-                    </div>
-            <div id="October">
-                <h2>More nature
-                </h2>
-                <p>
-                    Ethiopia's geography provides various diverse landscapes from mountains to lakes that provide habitats for many different plant and animal species. It is home to many of the East African plain animals except for giraffes and buffalo.                </p>
-                
-                    <div class="container">
-                        <div class="row">
-                          <div class="col-md-4">
-                            <img src="./images/november-main.jpg" class="img-fluid" alt="Image 1">
-                          </div>
-                          <div class="col-md-4">
-                            <img src="images/november-main.jpg" class="img-fluid" alt="Image 2">
-                          </div>
-                          <div class="col-md-4">
-                            <img src="./images/november-main.jpg" class="img-fluid" alt="Image 3">
-                          </div>
-                        </div>
-                    </div>
-            <div id="December">
-                <h2>Great Ethiopian run
-                </h2>
-                <p>
-                    The Great Ethiopian Run is an annual 10-kilometre road running event which takes place in late November in Addis Ababa, Ethiopia.                 </p>
-                
-                    <div class="container">
-                        <div class="row">
-                          <div class="col-md-4">
-                            <img src="./images/christmas-2.jpg" class="img-fluid" alt="Image 1">
-                          </div>
-                          <div class="col-md-4">
-                            <img src="images/christmas-main.jpg" class="img-fluid" alt="Image 2">
-                          </div>
-                          <div class="col-md-4">
+                        <div class="col-md-4">
                             <img src="./images/christmas-3.jpg" class="img-fluid" alt="Image 3">
-                          </div>
                         </div>
                     </div>
+                </div>
+                <div id="February">
+                    <h2>Harrar</h2>
+                    <p>
+                        Harar is a city in eastern Ethiopia. It’s surrounded by a centuries-old defensive wall that has several large gates, including Duke's Gate. The city is known for its mazelike alleys and traditional houses decorated inside with flat hanging baskets.
+                    </p>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="./images/harrar-main.jpg" class="img-fluid" alt="Image 1">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="images/harrar-main.jpg" class="img-fluid" alt="Image 2">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="./images/harrar-main.jpg" class="img-fluid" alt="Image 3">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="March">
+                        <h2>Adwa</h2>
+                        <p>
+                            Adwa is a town and separate woreda in Tigray Region, Ethiopia. It is best known as the community closest to the site of the 1896 Battle of Adwa, in which Ethiopian soldiers defeated Italian troops, thus being one of the few African nations to thwart European
+                            colonialism.
+                        </p>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="./images/april-main.avif" class="img-fluid" alt="Image 1">
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="images/april-main.avif" class="img-fluid" alt="Image 2">
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="./images/april-main.avif" class="img-fluid" alt="Image 3">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="April">
+                            <h2>Easter</h2>
+                            <p>
+                                “Fasika” is the Amharic word for Easter, and refers to the 55-days where Ethiopians celebrate their most important festival of the year. This festival, which celebrates the death and resurrection of Jesus Christ, is one of the most longstanding within
+                                the Ethiopian Orthodox Church.
+                            </p>
+
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="./images/june-main.jpg" class="img-fluid" alt="Image 1">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="images/june-main.jpg" class="img-fluid" alt="Image 2">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="./images/june-main.jpg" class="img-fluid" alt="Image 3">
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="May">
+                                <h2>Omo valley
+                                </h2>
+                                <p>
+                                    The lower Omo Valley of southern Ethiopia is home to some of the world's last unchanged cultural groups. The area is a melting pot of cultures and communities and represents some of the greatest genetic variance on the continent. Many describe the Omo
+                                    as being the birthplace of mankind. It's not hard to see why.
+                                </p>
+
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <img src="./images/omo-main.avif" class="img-fluid" alt="Image 1">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <img src="images/Omo-2.avif" class="img-fluid" alt="Image 2">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <img src="./images/omo-3.avif" class="img-fluid" alt="Image 3">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="June">
+                                    <h2>The Mountains
+                                    </h2>
+                                    <p>
+                                        The most notable of these is the Simien Mountains, the highest point of which is Ras Dejen (or Dashen), 14,872 feet (4,533 metres) high. Other groups are the Ch'ok'ē Mountains, the Lasta and Amhara-Saint massifs, and the Gemu Massif. No peak in Ethiopia
+                                        is permanently snow covered. </p>
+
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <img src="./images/november-main.jpg" class="img-fluid" alt="Image 1">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <img src="images/november-main.jpg" class="img-fluid" alt="Image 2">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <img src="./images/november-main.jpg" class="img-fluid" alt="Image 3">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="June">
+                                        <h2>Fasil Ginb
+                                        </h2>
+                                        <p>
+                                            The Fasil Ghebbi is a fortress located in Gondar, Amhara Region, Ethiopia. It was founded in the 17th century by Emperor Fasilides and was the home of Ethiopian emperors. Its unique architecture shows diverse influences including Nubian, Indian, Arab,
+                                            and Baroque characteristics.
+                                        </p>
+
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <img src="./images/june-main.jpg" class="img-fluid" alt="Image 1">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <img src="images/june-main.jpg" class="img-fluid" alt="Image 2">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <img src="./images/june-main.jpg" class="img-fluid" alt="Image 3">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div id="July">
+                                            <h2>The Mountains
+                                            </h2>
+                                            <p>
+                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae atque accusantium corrupti ullam omnis enim eos quidem expedita nam consectetur ut qui, necessitatibus quaerat quisquam at? In dicta veniam vel?
+                                            </p>
+
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <img src="./images/july-main.jpg" class="img-fluid" alt="Image 1">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <img src="images/july-main.jpg" class="img-fluid" alt="Image 2">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <img src="./images/july-main.jpg" class="img-fluid" alt="Image 3">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="August">
+                                                <h2>Walias
+                                                </h2>
+                                                <p>
+                                                    Found in the eastern and western Highlands of Ethiopia, primarily in Simien Mountains National Park, the Walia Ibex - or Abyssinian Ibex - is a giant mountain goat and a subspecies of the Spanish ibex. </p>
+
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <img src="./images/august-main.avif" class="img-fluid" alt="Image 1">
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <img src="images/august-main.avif" class="img-fluid" alt="Image 2">
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <img src="./images/august-main.avif" class="img-fluid" alt="Image 3">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="September">
+                                                <h2>Enkutatash
+                                                </h2>
+                                                <p>
+                                                    Enkutatash is a public holiday in coincidence of New Year in Ethiopia and Eritrea. It occurs on Meskerem 1 on the Ethiopian calendar, which is 11 September according to the Gregorian calendar. </p>
+
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <img src="./images/new-year-main.jpg" class="img-fluid" alt="Image 1">
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <img src="images/new-year-main.jpg" class="img-fluid" alt="Image 2">
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <img src="./images/new-year-main.jpg" class="img-fluid" alt="Image 3">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="October">
+                                                    <h2>More nature
+                                                    </h2>
+                                                    <p>
+                                                        Ethiopia's geography provides various diverse landscapes from mountains to lakes that provide habitats for many different plant and animal species. It is home to many of the East African plain animals except for giraffes and buffalo. </p>
+
+                                                    <div class="container">
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <img src="./images/november-main.jpg" class="img-fluid" alt="Image 1">
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <img src="images/november-main.jpg" class="img-fluid" alt="Image 2">
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <img src="./images/november-main.jpg" class="img-fluid" alt="Image 3">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="December">
+                                                        <h2>Great Ethiopian run
+                                                        </h2>
+                                                        <p>
+                                                            The Great Ethiopian Run is an annual 10-kilometre road running event which takes place in late November in Addis Ababa, Ethiopia. </p>
+
+                                                        <div class="container">
+                                                            <div class="row">
+                                                                <div class="col-md-4">
+                                                                    <img src="./images/christmas-2.jpg" class="img-fluid" alt="Image 1">
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <img src="images/christmas-main.jpg" class="img-fluid" alt="Image 2">
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <img src="./images/christmas-3.jpg" class="img-fluid" alt="Image 3">
+                                                                </div>
+                                                            </div>
+                                                        </div>
         </section>
-            
+
 
     </main>
     <footer class="" style="background-color: black;">
-    
-      <div class="text-center my-3 pe-5 ps-5 " style="font-weight: bold;">
-        
-          <div class="d-flex justify-content-around gap-2bg-dark pt-5" id="">
-            <div class=" mx-auto pt-3">
-              <a class="navbar-brand" href="#"><img src="./images/Explore Ethiopia.png" alt="" width="100px"
-                height="100px"></a>
-            </div>
-              <ul class=" mx-auto " style="list-style-type: none;">
-                <li class="nav-item" style="font-size: large;">
-                    <a class="nav-link active text-light" aria-current="page" href="./index.html">Home</a>
-                </li>
-                <li class="nav-item " >
-                    <a class="nav-link text-light" href="./exploreethiopia.html">Explore Ethiopia</a>
-                </li>
-                <li class="nav-item" >
-                    <a class="nav-link text-light" href="./experiences.html">Experiences</a>
-                </li>
-              </ul>
-              <ul class=" mx-auto" style="list-style-type: none;">
-                <li class="nav-item">
-                  <a class="nav-link text-light" style="font-size: large;" href="./contactus.html">Contact Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="./basicinformation.html">Basic Info</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="./planning.html">Planning</a>
-                </li>
-                
-              </ul>
-              <ul class=" mx-auto" style="list-style-type: none;">
-                <li class="nav-item">
-                    <a class="nav-link text-light" style="font-size: large;" href="./aboutus.html">About Us</a>
-                </li>
-                <li><a href="#" class="nav-link  text-light">Privacy Policy</a></li>
-                <li><a href="#" class="nav-link text-light">Terms of use</a></li>
-              </ul>
-              <div class="pt-5 p-5 me-5">
-                <!-- <p class="h3 text-white">Social</p> -->
-                <div class="fa-lg mt-0">
-                  <a href ="#" class=""><i class="fa-brands fa-facebook icon fa-xl"></i></a>
-                  <a href="#" class="ps-3"><i class="fa-brands fa-instagram icon fa-xl"></i></a>
-                  <a href="#" class="ps-3"><i class="fa-brands fa-telegram icon fa-xl"></i></a>
-                  <a href="#" class="ps-3"><i class="fa-brands fa-twitter icon fa-xl"></i></a> 
+
+        <div class="text-center my-3 pe-5 ps-5 " style="font-weight: bold;">
+
+            <div class="d-flex justify-content-around gap-2bg-dark pt-5" id="">
+                <div class=" mx-auto pt-3">
+                    <a class="navbar-brand" href="#"><img src="./images/Explore Ethiopia.png" alt="" width="100px" height="100px"></a>
                 </div>
-              </div>
-          </div>
-          <hr class="text-white mb-3 mt-4 m-5">
-          
-      </div>
-      <div class="text-center">
-        <h3 class="text-white justify-content-center h6 pb-1" style="font-family: 'Courier New', Courier, monospace;">&#169; Explore Ethiopia Copyright <span></span> 2023. All rights reserved.</h3>
-      </div>
-  </footer>
+                <ul class=" mx-auto " style="list-style-type: none;">
+                    <li class="nav-item" style="font-size: large;">
+                        <a class="nav-link active text-light" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-light" href="./exploreethiopia.html">Explore Ethiopia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="./experiences.html">Experiences</a>
+                    </li>
+                </ul>
+                <ul class=" mx-auto" style="list-style-type: none;">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" style="font-size: large;" href="./contactus.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="./basicinformation.html">Basic Info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="./planning.html">Planning</a>
+                    </li>
+
+                </ul>
+                <ul class=" mx-auto" style="list-style-type: none;">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" style="font-size: large;" href="./aboutus.html">About Us</a>
+                    </li>
+                    <li><a href="#" class="nav-link  text-light">Privacy Policy</a></li>
+                    <li><a href="#" class="nav-link text-light">Terms of use</a></li>
+                </ul>
+                <div class="pt-5 p-5 me-5">
+                    <!-- <p class="h3 text-white">Social</p> -->
+                    <div class="fa-lg mt-0">
+                        <a href="#" class=""><i class="fa-brands fa-facebook icon fa-xl"></i></a>
+                        <a href="#" class="ps-3"><i class="fa-brands fa-instagram icon fa-xl"></i></a>
+                        <a href="#" class="ps-3"><i class="fa-brands fa-telegram icon fa-xl"></i></a>
+                        <a href="#" class="ps-3"><i class="fa-brands fa-twitter icon fa-xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="text-white mb-3 mt-4 m-5">
+
+        </div>
+        <div class="text-center">
+            <h3 class="text-white justify-content-center h6 pb-1" style="font-family: 'Courier New', Courier, monospace;">&#169; Explore Ethiopia Copyright <span></span> 2023. All rights reserved.</h3>
+        </div>
+    </footer>
 </body>
+
 </html>

@@ -1,74 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planning</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
 
     <link rel="stylesheet" href="./bootstrap.min.css">
     <script src="./bootstrap.bundle.min.js" defer></script>
 
     <style>
-        .row img{
+        .row img {
             display: block;
             width: 100%;
             height: 100%;
         }
-
-        .col-md-4{
+        
+        .col-md-4 {
             height: 220px;
         }
-        .carousel img{
+        
+        .carousel img {
             max-height: 80vh;
         }
         
+        .navbar-nav>li {
+            height: 60px;
+            /* margin-left:30px;
+    margin-right:30px; */
+            margin: 0 30px;
+        }
+        
+        .navbar-nav>li:nth-child(5) {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        .navbar-nav>li:nth-child(5)::after {
+            content: '';
+            width: 0;
+            height: 3px;
+            background: lightpink;
+            display: block;
+            margin: auto;
+            width: 100%;
+            transition: 0.5s;
+        }
     </style>
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark container">
-  <a class="navbar-brand" href="#"><img src="./images/Explore Ethiopia.png" alt="" width="48px"
-    height="48px"></a>
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#"><img src="./images/Explore Ethiopia.png" alt="" width="48px" height="48px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav mx-auto">
-        <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="./index.html">Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-white" href="./exploreethiopia.html">Explore Ethiopia</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-white" href="./experiences.html">Experiences</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-white" href="./basicinformation.html">Basic Info</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-white" href="./planning.html">Planning</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-white" href="./contactus.html">Contact Us</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-white" href="./aboutus.html">About Us</a>
-        </li>
-    </ul>
-  </div>
-</nav>
-        
-      
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./exploreethiopia.html">Explore Ethiopia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./experiences.html">Experiences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./basicinformation.html">Basic Info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./planning.html">Planning</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./contactus.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./aboutus.html">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
     </header>
 
     <main class="container">
         <section class="arrival mb-4">
             <h2>Arrival and Formalties</h2>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis tempore ex sed   cum eos, molestias debitis, ipsam, est quisquam placeat expedita quas! A voluptates voluptate veritatis, inventore perferendis cumque in neque aperiam veniam magni laudantium id vel culpa sequi recusandae vitae magnam ipsam odio natus ullam placeat sit eveniet! Quibusdam voluptatibus consectetur et doloribus, numquam officia possimus nihil quia iusto atque, nisi enim exercitationem, beatae aperiam vitae earum maiores consequuntur dolores autem pariatur sapiente totam. Officia quasi amet maiores, praesentium possimus sequi temporibus consequatur architecto sed cumque, aliquam cupiditate perspiciatis eveniet id fuga ab aspernatur. Ea necessitatibus vero quisquam aliquid!
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis tempore ex sed cum eos, molestias debitis, ipsam, est quisquam placeat expedita quas! A voluptates voluptate veritatis, inventore perferendis cumque in neque aperiam veniam magni laudantium
+            id vel culpa sequi recusandae vitae magnam ipsam odio natus ullam placeat sit eveniet! Quibusdam voluptatibus consectetur et doloribus, numquam officia possimus nihil quia iusto atque, nisi enim exercitationem, beatae aperiam vitae earum maiores
+            consequuntur dolores autem pariatur sapiente totam. Officia quasi amet maiores, praesentium possimus sequi temporibus consequatur architecto sed cumque, aliquam cupiditate perspiciatis eveniet id fuga ab aspernatur. Ea necessitatibus vero
+            quisquam aliquid!
         </section>
 
         <section class="hotels">
@@ -76,30 +103,30 @@
             <a href="https://www.google.com/maps/dir/9.0339143,38.7649873/Sheraton+Addis/@9.0292606,38.7544328,15z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x164b85930b17ec2f:0x8a433f2230326db!2m2!1d38.7600027!2d9.0203037">Map</a>
             <div class="container">
                 <div class="row">
-                  <div class="col-md-4">
-                    <img src="./images/sheraton-1.jpg" class="img-fluid" alt="Image 1">
-                  </div>
-                  <div class="col-md-4">
-                    <img src="images/sheraton-2.jpg" class="img-fluid" alt="Image 2">
-                  </div>
-                  <div class="col-md-4">
-                    <img src="./images/sheraton-1.jpg" class="img-fluid" alt="Image 3">
-                  </div>
+                    <div class="col-md-4">
+                        <img src="./images/sheraton-1.jpg" class="img-fluid" alt="Image 1">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/sheraton-2.jpg" class="img-fluid" alt="Image 2">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./images/sheraton-1.jpg" class="img-fluid" alt="Image 3">
+                    </div>
                 </div>
             </div>
             <h3>Hilton</h3>
             <a href="https://www.google.com/maps/dir//hilton+hotel/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x164b8596e4447f7d:0x7d2d64a64dc9c36f?sa=X&ved=2ahUKEwi13J2Bupn8AhXjQeUKHf5KA2wQ9Rd6BAh6EAQ">Map</a>
             <div class="container mb-4">
                 <div class="row">
-                  <div class="col-md-4">
-                    <img src="./images/hilton-1.jpg" class="img-fluid" alt="Image 1">
-                  </div>
-                  <div class="col-md-4">
-                    <img src="images/hilton-2.jpg" class="img-fluid" alt="Image 2">
-                  </div>
-                  <div class="col-md-4">
-                    <img src="./images/hilton-1.jpg" class="img-fluid" alt="Image 3">
-                  </div>
+                    <div class="col-md-4">
+                        <img src="./images/hilton-1.jpg" class="img-fluid" alt="Image 1">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/hilton-2.jpg" class="img-fluid" alt="Image 2">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./images/hilton-1.jpg" class="img-fluid" alt="Image 3">
+                    </div>
                 </div>
             </div>
         </section>
@@ -107,93 +134,93 @@
         <section class="transport">
             <h2>Public Transport</h3>
 
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th scope="col">Type</th>
-                    <th scope="col">Source</th>
-                    <th scope="col">Destination</th>
-                    <th scope="col">Fee</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">Train</th>
-                    <td>Addis Ababa</td>
-                    <td>Dire Dawa</td>
-                    <td>1500</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Bus</th>
-                    <td>Addis Ababa</td>
-                    <td>Bahir dark</td>
-                    <td>1500</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Bus</th>
-                    <td>Bahir dark</td>
-                    <td>Lalibela</td>
-                    <td>500</td>
-                  </tr>
-                </tbody>
-              </table>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Type</th>
+                            <th scope="col">Source</th>
+                            <th scope="col">Destination</th>
+                            <th scope="col">Fee</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Train</th>
+                            <td>Addis Ababa</td>
+                            <td>Dire Dawa</td>
+                            <td>1500</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Bus</th>
+                            <td>Addis Ababa</td>
+                            <td>Bahir dark</td>
+                            <td>1500</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Bus</th>
+                            <td>Bahir dark</td>
+                            <td>Lalibela</td>
+                            <td>500</td>
+                        </tr>
+                    </tbody>
+                </table>
         </section>
     </main>
     <footer class="" style="background-color: black;">
-    
-      <div class="text-center my-3 pe-5 ps-5 " style="font-weight: bold;">
-        
-          <div class="d-flex justify-content-around gap-2bg-dark pt-5" id="">
-            <div class=" mx-auto pt-3">
-              <a class="navbar-brand" href="#"><img src="./images/Explore Ethiopia.png" alt="" width="100px"
-                height="100px"></a>
-            </div>
-              <ul class=" mx-auto " style="list-style-type: none;">
-                <li class="nav-item" style="font-size: large;">
-                    <a class="nav-link active text-light" aria-current="page" href="./index.html">Home</a>
-                </li>
-                <li class="nav-item " >
-                    <a class="nav-link text-light" href="./exploreethiopia.html">Explore Ethiopia</a>
-                </li>
-                <li class="nav-item" >
-                    <a class="nav-link text-light" href="./experiences.html">Experiences</a>
-                </li>
-              </ul>
-              <ul class=" mx-auto" style="list-style-type: none;">
-                <li class="nav-item">
-                  <a class="nav-link text-light" style="font-size: large;" href="./contactus.html">Contact Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="./basicinformation.html">Basic Info</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="./planning.html">Planning</a>
-                </li>
-                
-              </ul>
-              <ul class=" mx-auto" style="list-style-type: none;">
-                <li class="nav-item">
-                    <a class="nav-link text-light" style="font-size: large;" href="./aboutus.html">About Us</a>
-                </li>
-                <li><a href="#" class="nav-link  text-light">Privacy Policy</a></li>
-                <li><a href="#" class="nav-link text-light">Terms of use</a></li>
-              </ul>
-              <div class="pt-5 p-5 me-5">
-                <!-- <p class="h3 text-white">Social</p> -->
-                <div class="fa-lg mt-0">
-                  <a href ="#" class=""><i class="fa-brands fa-facebook icon fa-xl"></i></a>
-                  <a href="#" class="ps-3"><i class="fa-brands fa-instagram icon fa-xl"></i></a>
-                  <a href="#" class="ps-3"><i class="fa-brands fa-telegram icon fa-xl"></i></a>
-                  <a href="#" class="ps-3"><i class="fa-brands fa-twitter icon fa-xl"></i></a> 
+
+        <div class="text-center my-3 pe-5 ps-5 " style="font-weight: bold;">
+
+            <div class="d-flex justify-content-around gap-2bg-dark pt-5" id="">
+                <div class=" mx-auto pt-3">
+                    <a class="navbar-brand" href="#"><img src="./images/Explore Ethiopia.png" alt="" width="100px" height="100px"></a>
                 </div>
-              </div>
-          </div>
-          <hr class="text-white mb-3 mt-4 m-5">
-          
-      </div>
-      <div class="text-center">
-        <h3 class="text-white justify-content-center h6 pb-1" style="font-family: 'Courier New', Courier, monospace;">&#169; Explore Ethiopia Copyright <span></span> 2023. All rights reserved.</h3>
-      </div>
-  </footer>
+                <ul class=" mx-auto " style="list-style-type: none;">
+                    <li class="nav-item" style="font-size: large;">
+                        <a class="nav-link active text-light" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-light" href="./exploreethiopia.html">Explore Ethiopia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="./experiences.html">Experiences</a>
+                    </li>
+                </ul>
+                <ul class=" mx-auto" style="list-style-type: none;">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" style="font-size: large;" href="./contactus.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="./basicinformation.html">Basic Info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="./planning.html">Planning</a>
+                    </li>
+
+                </ul>
+                <ul class=" mx-auto" style="list-style-type: none;">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" style="font-size: large;" href="./aboutus.html">About Us</a>
+                    </li>
+                    <li><a href="#" class="nav-link  text-light">Privacy Policy</a></li>
+                    <li><a href="#" class="nav-link text-light">Terms of use</a></li>
+                </ul>
+                <div class="pt-5 p-5 me-5">
+                    <!-- <p class="h3 text-white">Social</p> -->
+                    <div class="fa-lg mt-0">
+                        <a href="#" class=""><i class="fa-brands fa-facebook icon fa-xl"></i></a>
+                        <a href="#" class="ps-3"><i class="fa-brands fa-instagram icon fa-xl"></i></a>
+                        <a href="#" class="ps-3"><i class="fa-brands fa-telegram icon fa-xl"></i></a>
+                        <a href="#" class="ps-3"><i class="fa-brands fa-twitter icon fa-xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="text-white mb-3 mt-4 m-5">
+
+        </div>
+        <div class="text-center">
+            <h3 class="text-white justify-content-center h6 pb-1" style="font-family: 'Courier New', Courier, monospace;">&#169; Explore Ethiopia Copyright <span></span> 2023. All rights reserved.</h3>
+        </div>
+    </footer>
 </body>
+
 </html>

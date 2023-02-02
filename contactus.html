@@ -1,138 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
 
     <link rel="stylesheet" href="./bootstrap.min.css">
     <link rel="stylesheet" href="contact.css">
 
     <script src="./bootstrap.bundle.min.js" defer></script>
     <script src="./contact-us.js" defer></script>
+    <style>
+        .navbar-nav>li {
+            height: 60px;
+            /* margin-left:30px;
+    margin-right:30px; */
+            margin: 0 30px;
+        }
+        
+        .navbar-nav>li:nth-child(6) {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        .navbar-nav>li:nth-child(6)::after {
+            content: '';
+            width: 0;
+            height: 3px;
+            background: lightpink;
+            display: block;
+            margin: auto;
+            width: 100%;
+            transition: 0.5s;
+        }
+    </style>
 </head>
+
 <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark container">
-  <a class="navbar-brand" href="#"><img src="./images/Explore Ethiopia.png" alt="" width="48px"
-    height="48px"></a>
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark container">
+            <a class="navbar-brand" href="#"><img src="./images/Explore Ethiopia.png" alt="" width="48px" height="48px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav mx-auto">
-        <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="./index.html">Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-white" href="./exploreethiopia.html">Explore Ethiopia</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-white" href="./experiences.html">Experiences</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-white" href="./basicinformation.html">Basic Info</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-white" href="./planning.html">Planning</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-white" href="./contactus.html">Contact Us</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-white" href="./aboutus.html">About Us</a>
-        </li>
-    </ul>
-  </div>
-</nav>
-    <main>
-        <div class="title text-center">
-            <h2>We would love to hear from you !</h2>
-        </div>
-        
-        <form class="form">
-          <div class="form-group w-75 mx-auto">
-            <label for="firstName">First Name</label>
-            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter first name">
-          </div>
-          <div class="form-group w-75 mx-auto">
-            <label for="lastName">Last Name</label>
-            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter last name">
-          </div>
-          <div class="form-group w-75 mx-auto">
-            <label for="email">Email</label>
-            <input type="email" class="form-control" id="email"  name = "email" placeholder="Enter email">
-          </div>
-          <div class="form-group w-75 mx-auto">
-            <label for="message">Message</label>
-            <textarea class="form-control comment" id="message" name="message" rows="3"></textarea>
-          </div>
-
-          <div class="text-center my-2">
-            <button type="submit" id="#submit" class="btn">Submit</button>
-          </div>
-          
-        </form>
-
-    </main>
-    <footer class="" style="background-color: black;">
-    
-      <div class="text-center my-3 pe-5 ps-5 " style="font-weight: bold;">
-        
-          <div class="d-flex justify-content-around gap-2bg-dark pt-5" id="">
-            <div class=" mx-auto pt-3">
-              <a class="navbar-brand" href="#"><img src="./images/Explore Ethiopia.png" alt="" width="100px"
-                height="100px"></a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./exploreethiopia.html">Explore Ethiopia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./experiences.html">Experiences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./basicinformation.html">Basic Info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./planning.html">Planning</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./contactus.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./aboutus.html">About Us</a>
+                    </li>
+                </ul>
             </div>
-              <ul class=" mx-auto " style="list-style-type: none;">
-                <li class="nav-item" style="font-size: large;">
-                    <a class="nav-link active text-light" aria-current="page" href="./index.html">Home</a>
-                </li>
-                <li class="nav-item " >
-                    <a class="nav-link text-light" href="./exploreethiopia.html">Explore Ethiopia</a>
-                </li>
-                <li class="nav-item" >
-                    <a class="nav-link text-light" href="./experiences.html">Experiences</a>
-                </li>
-              </ul>
-              <ul class=" mx-auto" style="list-style-type: none;">
-                <li class="nav-item">
-                  <a class="nav-link text-light" style="font-size: large;" href="./contactus.html">Contact Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="./basicinformation.html">Basic Info</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="./planning.html">Planning</a>
-                </li>
-                
-              </ul>
-              <ul class=" mx-auto" style="list-style-type: none;">
-                <li class="nav-item">
-                    <a class="nav-link text-light" style="font-size: large;" href="./aboutus.html">About Us</a>
-                </li>
-                <li><a href="#" class="nav-link  text-light">Privacy Policy</a></li>
-                <li><a href="#" class="nav-link text-light">Terms of use</a></li>
-              </ul>
-              <div class="pt-5 p-5 me-5">
-                <!-- <p class="h3 text-white">Social</p> -->
-                <div class="fa-lg mt-0">
-                  <a href ="#" class=""><i class="fa-brands fa-facebook icon fa-xl"></i></a>
-                  <a href="#" class="ps-3"><i class="fa-brands fa-instagram icon fa-xl"></i></a>
-                  <a href="#" class="ps-3"><i class="fa-brands fa-telegram icon fa-xl"></i></a>
-                  <a href="#" class="ps-3"><i class="fa-brands fa-twitter icon fa-xl"></i></a> 
+        </nav>
+        <main>
+            <div class="title text-center">
+                <h2>We would love to hear from you !</h2>
+            </div>
+
+            <form class="form">
+                <div class="form-group w-75 mx-auto">
+                    <label for="firstName">First Name</label>
+                    <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter first name">
                 </div>
-              </div>
-          </div>
-          <hr class="text-white mb-3 mt-4 m-5">
-          
-      </div>
-      <div class="text-center">
-        <h3 class="text-white justify-content-center h6 pb-1" style="font-family: 'Courier New', Courier, monospace;">&#169; Explore Ethiopia Copyright <span></span> 2023. All rights reserved.</h3>
-      </div>
-  </footer>
+                <div class="form-group w-75 mx-auto">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter last name">
+                </div>
+                <div class="form-group w-75 mx-auto">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
+                </div>
+                <div class="form-group w-75 mx-auto">
+                    <label for="message">Message</label>
+                    <textarea class="form-control comment" id="message" name="message" rows="3"></textarea>
+                </div>
+
+                <div class="text-center my-2">
+                    <button type="submit" id="#submit" class="btn">Submit</button>
+                </div>
+
+            </form>
+
+        </main>
+        <footer class="" style="background-color: black;">
+
+            <div class="text-center my-3 pe-5 ps-5 " style="font-weight: bold;">
+
+                <div class="d-flex justify-content-around gap-2bg-dark pt-5" id="">
+                    <div class=" mx-auto pt-3">
+                        <a class="navbar-brand" href="#"><img src="./images/Explore Ethiopia.png" alt="" width="100px" height="100px"></a>
+                    </div>
+                    <ul class=" mx-auto " style="list-style-type: none;">
+                        <li class="nav-item" style="font-size: large;">
+                            <a class="nav-link active text-light" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-light" href="./exploreethiopia.html">Explore Ethiopia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="./experiences.html">Experiences</a>
+                        </li>
+                    </ul>
+                    <ul class=" mx-auto" style="list-style-type: none;">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" style="font-size: large;" href="./contactus.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="./basicinformation.html">Basic Info</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="./planning.html">Planning</a>
+                        </li>
+
+                    </ul>
+                    <ul class=" mx-auto" style="list-style-type: none;">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" style="font-size: large;" href="./aboutus.html">About Us</a>
+                        </li>
+                        <li><a href="#" class="nav-link  text-light">Privacy Policy</a></li>
+                        <li><a href="#" class="nav-link text-light">Terms of use</a></li>
+                    </ul>
+                    <div class="pt-5 p-5 me-5">
+                        <!-- <p class="h3 text-white">Social</p> -->
+                        <div class="fa-lg mt-0">
+                            <a href="#" class=""><i class="fa-brands fa-facebook icon fa-xl"></i></a>
+                            <a href="#" class="ps-3"><i class="fa-brands fa-instagram icon fa-xl"></i></a>
+                            <a href="#" class="ps-3"><i class="fa-brands fa-telegram icon fa-xl"></i></a>
+                            <a href="#" class="ps-3"><i class="fa-brands fa-twitter icon fa-xl"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="text-white mb-3 mt-4 m-5">
+
+            </div>
+            <div class="text-center">
+                <h3 class="text-white justify-content-center h6 pb-1" style="font-family: 'Courier New', Courier, monospace;">&#169; Explore Ethiopia Copyright <span></span> 2023. All rights reserved.</h3>
+            </div>
+        </footer>
 </body>
+
 </html>

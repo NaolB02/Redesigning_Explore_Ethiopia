@@ -1,107 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic information</title>
 
+    <link rel="stylesheet" href="basicInfo.css">
+
     <link rel="stylesheet" href="./bootstrap.min.css">
 
     <script src="./bootstrap.bundle.min.js" defer></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark container">
-            <a class="navbar-brand" href="#"><img src="./images/Explore Ethiopia.png" alt="" width="48px"
-              height="48px"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#"><img src="./images/Explore Ethiopia.png" alt="" width="48px" height="48px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                           <span class="navbar-toggler-icon"></span>
                       </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav mx-auto">
-                  <li class="nav-item">
-                      <a class="nav-link active text-white" aria-current="page" href="./index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link text-white" href="./exploreethiopia.html">Explore Ethiopia</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link text-white" href="./experiences.html">Experiences</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link text-white" href="./basicinformation.html">Basic Info</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link text-white" href="./planning.html">Planning</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link text-white" href="./contactus.html">Contact Us</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link text-white" href="./aboutus.html">About Us</a>
-                  </li>
-              </ul>
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./exploreethiopia.html">Explore Ethiopia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./experiences.html">Experiences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./basicinformation.html">Basic Info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./planning.html">Planning</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./contactus.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./aboutus.html">About Us</a>
+                    </li>
+                </ul>
             </div>
-          </nav>
+        </nav>
     </header>
 
     <main class="container text-center">
         <div class="topdiv">
-            <h1 class="main_title my-4">Commom Greetings</h1>
+            <h1 class="main_title">Common Greetings</h1>
         </div>
-            
-        <div class="note_part">
-            <div class="text my-4">
-                <h2>List of Common Greetings</h2>
-            </div>
-            
 
-            <table class="table">
-                <tbody>
-                  <tr>
-                    <td>Good Morning</td>
-                    <td>Dehna Aderk</td>
-                    <td><audio src="./audios/audio-1.ogg" controls></td>
-                  </tr>
-                  <tr>
-                    <td>Good Evening</td>
-                    <td>Dehna Ameshek</td>
-                    <td><audio src="./audios/audio-3.ogg" controls></td>
-                  </tr>
-                  <tr>
-                    <td>Good night</td>
-                    <td>Dehna Ameshek</td>
-                    <td><audio src="./audios/audio-2.ogg" controls></td>
-                  </tr>
-                </tbody>
-              </table>
+        <div class="row justify-content-between gx-2">
+
+            <div class="col-3 cards">
+
+                <div class="card-audio audio-player">
+                    <div class="icon-container">
+                        <audio class="audio-1" src="audios/audio-1.ogg"></audio>
+                    </div>
+
+                    <div class="controls">
+                        <button class="player-button player-button-1">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#3D3132">
+                          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                        </svg>
+                            </button>
+                        <input type="range" class="timeline timeline-1" max="100" value="0">
+                    </div>
+
+                </div>
+
+                <div class="card-tex">
+                    <h2>Dehna Aderk</h2>
+                    <p>Translation: Good Morning</p>
+                </div>
+
+            </div>
+
+            <div class="col-3 cards">
+
+                <div class="card-audio audio-player">
+                    <div class="icon-container">
+                        <audio class="audio-2" src="audios/audio-2.ogg"></audio>
+                    </div>
+
+                    <div class="controls">
+                        <button class="player-button player-button-2">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#3D3132">
+                          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                        </svg>
+                            </button>
+                        <input type="range" class="timeline timeline-2" max="100" value="0">
+                    </div>
+
+                </div>
+
+                <div class="card-tex">
+                    <h2>Dehna Ameshek</h2>
+                    <p>Translation: Good Evening</p>
+                </div>
+
+            </div>
+
+            <div class="col-3 cards">
+
+                <div class="card-audio audio-player">
+                    <div class="icon-container">
+                        <audio class="audio-3" src="audios/audio-3.ogg"></audio>
+                    </div>
+
+                    <div class="controls">
+                        <button class="player-button player-button-3">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#3D3132">
+                          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                        </svg>
+                            </button>
+                        <input type="range" class="timeline timeline-3" max="100" value="0">
+                    </div>
+
+                </div>
+
+
+                <div class="card-tex">
+                    <h2>Dehna Eder</h2>
+                    <p>Translation: Good Night</p>
+                </div>
+            </div>
+
+        </div>
 
         </div>
 
         <div class="middiv">
-            <div class="text">
-                <h1 class="main_title">Commom Traditions</h1>
-            </div>
-            
+            <h1 class="main_title_trad col_1">Common Traditions</h1>
+
+
+            <section class="col_2">
+                <div class="note_part card">
+                    <p>
+                        The customs of Ethiopia continue to be deeply rooted in centuries of practice, and many aspects of daily life are ritualised. For example, there is a correct and traditional way to serve coffee, fold a dress, cut chicken and greet people. The country
+                        also has its own ancient alphabet and calendar that are still in use.
+                    </p>
+
+                </div>
+            </section>
         </div>
 
-        <section>
-            <div class="note_part">
-                <h1>Ethiopian Tradition</h1>
-                <p>
-                    The customs of Ethiopia continue to be deeply rooted in centuries of practice, and many aspects of daily life are ritualised. For example, there is a correct and traditional way to serve coffee, fold a dress, cut chicken and greet people. The country also has its own ancient alphabet and calendar that are still in use.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores repudiandae repellat magni architecto cum omnis voluptates officia quaerat debitis sapiente optio eveniet at soluta sint, numquam error inventore ut, exercitationem commodi nobis, rerum nulla quia. Nam natus rem ex odio modi, eos accusamus harum consequatur, esse minus quam vitae iste, id obcaecati. Quasi, numquam omnis, error exercitationem a cumque reiciendis non illo reprehenderit expedita natus laborum molestiae accusantium facilis. Natus, soluta ea. Eaque quos fugit fugiat corrupti voluptate mollitia, aspernatur, incidunt tempore aut culpa unde saepe quas porro ea alias accusantium. Praesentium nulla facilis ducimus totam blanditiis placeat iusto rerum.
-                </p>
-            </div>
-        </section>
-        
     </main>
 
     <footer>
@@ -113,15 +169,18 @@
             </ul>
 
             <div class="fa-lg">
-                <a href ="#"><i class="fa-brands fa-facebook icon"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook icon"></i></a>
                 <a href="#"><i class="fa-brands fa-instagram icon"></i></a>
                 <a href="#"><i class="fa-brands fa-telegram icon"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter icon"></i></a> 
+                <a href="#"><i class="fa-brands fa-twitter icon"></i></a>
             </div>
 
         </div>
-        
+
 
     </footer>
 </body>
+
+<script src="basicinfo.js"></script>
+
 </html>

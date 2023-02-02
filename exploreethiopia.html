@@ -11,14 +11,15 @@
 
 
     <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="explore.css">
     <script src="./bootstrap.bundle.min.js" defer></script>
 
     <style>
-        body {
+                body {
             overflow-x: hidden;
         }
         
-        .map-container a {
+        <<<<<<< HEAD .map-container a {
             text-decoration: none;
             color: black;
             letter-spacing: 2px;
@@ -39,78 +40,75 @@
         }
         
         .map-container img {
-            width: 100%;
-            height: 100%;
-        }
-        
-        .seimen {
-            position: absolute;
-            top: 20%;
-            left: 25%;
-        }
-        
-        .bale {
-            position: absolute;
-            top: 70%;
-            left: 25%;
-        }
-        
-        .omo {
-            position: absolute;
-            bottom: 10%;
-            left: 55%;
-        }
-        
-        .axum {
-            position: absolute;
-            top: 10%;
-            left: 45%;
-        }
-        
-        .danakil {
-            position: absolute;
-            top: 55%;
-            left: 70%;
-        }
-        
-        .lalibela {
-            position: absolute;
-            top: 35%;
-            left: 46%;
-        }
-        
-        .col-md-4 {
-            height: 220px;
-        }
-        
-        main img {
-            display: block;
-            width: 100%;
-            max-height: 100%;
-        }
-        
-        .navbar-nav>li {
-            height: 60px;
-            /* margin-left:30px;
+            =======.image-container {
+                position: relative;
+                width: 350px;
+                height: 300px;
+                display: grid;
+                place-items: center;
+            }
+            .place {
+                display: flex;
+                justify-content: space-evenly;
+            }
+            .description {
+                padding-top: 20px;
+            }
+            .image {
+                width: 300px;
+                height: 300px;
+                transition: all .3s;
+            }
+            .image-container img {
+                >>>>>>>0df834dec4a8e24132fb5a8f97e7743c0491fe33 width: 100%;
+                height: 100%;
+                border-radius: 10%;
+            }
+            <<<<<<< HEAD .seimen {
+                =======.right-icon,
+                .left-icon {
+                    padding: 10px;
+                    font-size: 2em;
+                    transition: all .4s;
+                    >>>>>>>0df834dec4a8e24132fb5a8f97e7743c0491fe33 position: absolute;
+                    cursor: pointer;
+                }
+                .right-icon {
+                    right: -20px;
+                    top: 40%;
+                }
+                .left-icon {
+                    left: -20px;
+                    top: 40%;
+                }
+                .right-icon:hover {
+                    background-color: rgb(114, 92, 92);
+                    color: white;
+                }
+                .left-icon:hover {
+                    background-color: rgb(129, 97, 97);
+                    color: white;
+                }
+                .navbar-nav>li {
+                    height: 60px;
+                    /* margin-left:30px;
     margin-right:30px; */
-            margin: 0 30px;
-        }
-        
-        .navbar-nav>li:nth-child(2) {
-            font-size: 18px;
-            font-weight: bold;
-        }
-        
-        .navbar-nav>li:nth-child(2)::after {
-            content: '';
-            width: 0;
-            height: 3px;
-            background: lightpink;
-            display: block;
-            margin: auto;
-            width: 100%;
-            transition: 0.5s;
-        }
+                    margin: 0 30px;
+                }
+                .navbar-nav>li:nth-child(2) {
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+                .navbar-nav>li:nth-child(2)::after {
+                    content: '';
+                    width: 0;
+                    height: 3px;
+                    background: lightpink;
+                    display: block;
+                    margin: auto;
+                    width: 100%;
+                    transition: 0.5s;
+                }
     </style>
 
 </head>
@@ -176,16 +174,19 @@
 
 
         <section class="note_section container">
-            <div id="lalibela">
-                <h2>Lalibela</h2>
-                <p>
-                    Lalibela is one of Ethiopia's most magical destinations. For many, it is the absolute highlight of their journey across Ethiopia. Mountaintop vistas where countryside extends as far as the eye can see, only to be broken by the rise of jagged peaks on
-                    the horizon. The quiet of a countryside walk swiftly juxtaposed by the chaos of a weekly market. Pilgrims adorned in white robes joining together in prayer and song, their voices heard in the farthest corners of the town. The kindness
-                    of a local priest, who upon noticing you, brings you a gown as the service begins.
-                </p>
+            <div class="place" id="lalibela">
+                <div class="description px-5">
+                    <h2>Lalibela</h2>
+                    <p>
+                        Lalibela is one of Ethiopia's most magical destinations. For many, it is the absolute highlight of their journey across Ethiopia. Mountaintop vistas where countryside extends as far as the eye can see, only to be broken by the rise of jagged peaks on
+                        the horizon. The quiet of a countryside walk swiftly juxtaposed by the chaos of a weekly market. Pilgrims adorned in white robes joining together in prayer and song, their voices heard in the farthest corners of the town. The kindness
+                        of a local priest, who upon noticing you, brings you a gown as the service begins.
+                    </p>
+                </div>
 
 
-                <div class="container">
+
+                <<<<<<< HEAD <div class="container">
                     <div class="row">
                         <div class="col-md-4">
                             <img src="./images/lalibel-main.jpg" class="img-fluid" alt="Image 1">
@@ -197,29 +198,201 @@
                             <img src="./images/lalibela-wall.avif" class="img-fluid" alt="Image 3">
                         </div>
                     </div>
-                </div>
+                    =======
+                    <div class="image-container">
+                        <div class="image">
+                            <img src="./images/lalibel-main.jpg" class="img-fluid" alt="Image 1">
+                        </div>
+                        <div class="image">
+                            <img src="images/lalibela-book.avif" class="img-fluid" alt="Image 2">
+                        </div>
+                        <div class="image">
+                            <img src="./images/lalibela-wall.avif" class="img-fluid" alt="Image 3">
+                        </div>
 
+                        <span class="right-icon" onclick="changeIdx(0, 1)"><i class="fa fa-chevron-right" aria-hidden="true"></i>
+                      </span>
+                        <span class="left-icon" onclick="changeIdx(0, -1)"><i class="fa fa-chevron-left" aria-hidden="true"></i>
+                      </span>
+                    </div>
 
-                <!-- Modal gallery -->
-                <div id="simien">
+            </div>
+
+            <!-- Modal gallery -->
+            <div class="place" id="simien">
+                <div class="description">
                     <h2>Simien Mountains National Park</h2>
                     <p>
                         The Simien Mountains are one of Ethiopia’s most popular destinations. Sitting just north of Gondar, it’s easily accessible along the northern circuit of Ethiopia. Comprising 220 square kilometres of peaks, plateaus, vistas and valleys, the park offers
                         stunning viewpoints and some of the best trekking routes in Africa.
                     </p>
+                </div>
 
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <img src="./images/simein-main.avif" class="img-fluid" alt="Image 1">
-                            </div>
-                            <div class="col-md-4">
-                                <img src="images/simein-monkey.avif" class="img-fluid" alt="Image 2">
-                            </div>
-                            <div class="col-md-4">
-                                <img src="./images/simein-people.avif" class="img-fluid" alt="Image 3">
-                            </div>
+                <div class="image-container">
+                    <div class="image">
+                        <img src="./images/simein-main.avif" class="img-fluid" alt="Image 1">
+                    </div>
+                    <div class="image">
+                        <img src="images/simein-monkey.avif" class="img-fluid" alt="Image 2">
+                    </div>
+                    <div class="image">
+                        <img src="./images/simein-people.avif" class="img-fluid" alt="Image 3">
+                    </div>
+
+                    <span class="right-icon" onclick="changeIdx(3, 1)"><i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </span>
+                    <span class="left-icon" onclick="changeIdx(3, -1)"><i class="fa fa-chevron-left" aria-hidden="true"></i>
+            </span>
+                </div>
+
+            </div>
+
+            <div class="place" id="danakil">
+
+                <div class="description">
+                    <h2>Danakil Depression</h2>
+                    <p>
+                        The Danakil Depression formed from the continental drift of the African and Asian tectonic plates. As the plates drifted apart at a rate of 1-2 cm per year, they leave behind a geological depression, known as the Danakil Depression (or Afar Depression).
+                        The Afar Depression spans Djibouti, Eritrea, and the Afar region of Ethiopia. The Northern part of this depression is the Danakil Depression, which sits more than 100m below sea level and contains some of the world’s most extraterrestrial
+                        landscapes.
+                    </p>
+
+                </div>
+                <div class="image-container">
+                    <div class="image">
+                        <img src="./images/danakil-main.avif" class="img-fluid" alt="Image 1"> >>>>>>> 0df834dec4a8e24132fb5a8f97e7743c0491fe33
+                    </div>
+                    <div class="image">
+                        <img src="images/danakil-2.avif" class="img-fluid" alt="Image 2">
+                    </div>
+                    <div class="image">
+                        <img src="./images/danakil-3.avif" class="img-fluid" alt="Image 3">
+                    </div>
+
+                    <span class="right-icon" onclick="changeIdx(6, 1)"><i class="fa fa-chevron-right" aria-hidden="true"></i>
+                </span>
+                    <span class="left-icon" onclick="changeIdx(6, -1)"><i class="fa fa-chevron-left" aria-hidden="true"></i>
+                </span>
+                </div>
+            </div>
+
+            <<<<<<< HEAD <!-- Modal gallery -->
+                <div id="simien">
+                    <h2>Simien Mountains National Park</h2>
+                    =======
+                    <div class="place" id="axum">
+                        <div class="description">
+                            <h2>Axum</h2>
+                            >>>>>>> 0df834dec4a8e24132fb5a8f97e7743c0491fe33
+                            <p>
+                                The Simien Mountains are one of Ethiopia’s most popular destinations. Sitting just north of Gondar, it’s easily accessible along the northern circuit of Ethiopia. Comprising 220 square kilometres of peaks, plateaus, vistas and valleys, the park offers
+                                stunning viewpoints and some of the best trekking routes in Africa.
+                            </p>
+                            <<<<<<< HEAD <div class="container">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="./images/simein-main.avif" class="img-fluid" alt="Image 1">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="images/simein-monkey.avif" class="img-fluid" alt="Image 2">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="./images/simein-people.avif" class="img-fluid" alt="Image 3">
+                                    </div>
+                                </div>
                         </div>
+
+                        =======
+                    </div>
+
+                    <div class="image-container">
+                        <div class="image">
+                            <img src="./images/Axum-main.avif" class="img-fluid" alt="Image 1">
+                        </div>
+                        <div class="image">
+                            <img src="images/axum-2.avif" class="img-fluid" alt="Image 2">
+                        </div>
+                        <div class="image">
+                            <img src="./images/Axum-3.avif" class="img-fluid" alt="Image 3">
+                        </div>
+
+                        <span class="right-icon" onclick="changeIdx(9, 1)"><i class="fa fa-chevron-right" aria-hidden="true"></i>
+                    </span>
+                        <span class="left-icon" onclick="changeIdx(9, -1)"><i class="fa fa-chevron-left" aria-hidden="true"></i>
+                    </span>
+                    </div>
+                    >>>>>>> 0df834dec4a8e24132fb5a8f97e7743c0491fe33
+
+                </div>
+
+                <div class="place" id="danakil">
+                    <div class="description">
+                        <h2>Danakil Depression</h2>
+                        <p>
+                            The Danakil Depression formed from the continental drift of the African and Asian tectonic plates. As the plates drifted apart at a rate of 1-2 cm per year, they leave behind a geological depression, known as the Danakil Depression (or Afar Depression).
+                            The Afar Depression spans Djibouti, Eritrea, and the Afar region of Ethiopia. The Northern part of this depression is the Danakil Depression, which sits more than 100m below sea level and contains some of the world’s most extraterrestrial
+                            landscapes.
+                        </p>
+                        <<<<<<< HEAD <div class="container">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="./images/danakil-main.avif" class="img-fluid" alt="Image 1">
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="images/danakil-2.avif" class="img-fluid" alt="Image 2">
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="./images/danakil-3.avif" class="img-fluid" alt="Image 3">
+                                </div>
+                            </div>
+                    </div>
+
+
+                    <div id="axum">
+                        <h2>Axum</h2>
+                        =======
+                    </div>
+
+                    <div class="image-container">
+                        <div class="image">
+                            <img src="./images/lalibel-main.jpg" class="img-fluid" alt="Image 1">
+                        </div>
+                        <div class="image">
+                            <img src="images/lalibela-book.avif" class="img-fluid" alt="Image 2">
+                        </div>
+                        <div class="image">
+                            <img src="./images/lalibela-wall.avif" class="img-fluid" alt="Image 3">
+                        </div>
+
+                        <span class="right-icon" onclick="changeIdx(12, 1)"><i class="fa fa-chevron-right" aria-hidden="true"></i>
+                        </span>
+                        <span class="left-icon" onclick="changeIdx(12, -1)"><i class="fa fa-chevron-left" aria-hidden="true"></i>
+                        </span>
+                    </div>
+
+
+                </div>
+                <div class="place" id="bale">
+                    <div class="description">
+                        <h2>Bale Mountains National Park
+                        </h2>
+                        >>>>>>> 0df834dec4a8e24132fb5a8f97e7743c0491fe33
+                        <p>
+                            As the home to the Queen of Sheba and (as the story goes) the Ark of the Covenant the storied artefact of Moses’ 10 commandments – Axum is one of the oldest continuously inhabited cities in northern African, dating back to 400 BC. In the same area, researchers
+                            have uncovered a number of tombs in Axum since the 1970s, but sadly many had been plundered by tomb raiders and only one such grave, The Tomb of the False Door, is now open to visitors.
+                        </p>
+                        <<<<<<< HEAD <div class="container">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="./images/Axum-main.avif" class="img-fluid" alt="Image 1">
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="images/axum-2.avif" class="img-fluid" alt="Image 2">
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="./images/Axum-3.avif" class="img-fluid" alt="Image 3">
+                                </div>
+                            </div>
                     </div>
 
 
@@ -234,109 +407,117 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-4">
-                                    <img src="./images/danakil-main.avif" class="img-fluid" alt="Image 1">
+                                    <img src="./images/lalibel-main.jpg" class="img-fluid" alt="Image 1">
                                 </div>
                                 <div class="col-md-4">
-                                    <img src="images/danakil-2.avif" class="img-fluid" alt="Image 2">
+                                    <img src="images/lalibela-book.avif" class="img-fluid" alt="Image 2">
                                 </div>
                                 <div class="col-md-4">
-                                    <img src="./images/danakil-3.avif" class="img-fluid" alt="Image 3">
+                                    <img src="./images/lalibela-wall.avif" class="img-fluid" alt="Image 3">
                                 </div>
                             </div>
                         </div>
 
 
-                        <div id="axum">
-                            <h2>Axum</h2>
+                        <div id="bale">
+                            <h2>Bale Mountains National Park
+                            </h2>
                             <p>
-                                As the home to the Queen of Sheba and (as the story goes) the Ark of the Covenant the storied artefact of Moses’ 10 commandments – Axum is one of the oldest continuously inhabited cities in northern African, dating back to 400 BC. In the same area, researchers
-                                have uncovered a number of tombs in Axum since the 1970s, but sadly many had been plundered by tomb raiders and only one such grave, The Tomb of the False Door, is now open to visitors.
+                                Rising over 4,000 metres, the Afro-Alpine plateau of the Bale Mountains is the highest mountainous area in southern Ethiopia. The beautiful Bale Mountain Lodge - nestled into the thickets of the Harenna Forest - is one Ethiopia's best boutique lodges.
+                                It's the perfect place to return for sun-downers by the roaring fire after a day's exploring.
                             </p>
 
                             <div class="container">
                                 <div class="row">
                                     <div class="col-md-4">
-                                        <img src="./images/Axum-main.avif" class="img-fluid" alt="Image 1">
+                                        <img src="./images/bale-main.avif" class="img-fluid" alt="Image 1">
                                     </div>
                                     <div class="col-md-4">
-                                        <img src="images/axum-2.avif" class="img-fluid" alt="Image 2">
+                                        <img src="images/bale-2.avif" class="img-fluid" alt="Image 2">
                                     </div>
                                     <div class="col-md-4">
-                                        <img src="./images/Axum-3.avif" class="img-fluid" alt="Image 3">
+                                        <img src="./images/bale-3.avif" class="img-fluid" alt="Image 3">
                                     </div>
                                 </div>
                             </div>
 
 
-                            <div id="danakil">
-                                <h2>Danakil Depression</h2>
-                                <p>
-                                    The Danakil Depression formed from the continental drift of the African and Asian tectonic plates. As the plates drifted apart at a rate of 1-2 cm per year, they leave behind a geological depression, known as the Danakil Depression (or Afar Depression).
-                                    The Afar Depression spans Djibouti, Eritrea, and the Afar region of Ethiopia. The Northern part of this depression is the Danakil Depression, which sits more than 100m below sea level and contains some of the world’s
-                                    most extraterrestrial landscapes.
-                                </p>
+                        </div>
+                        <div id="omo">
+                            <h2>Omo valley
+                            </h2>
+                            <p>
+                                The Omo Valley, often more precisely called the Lower Omo Valley, is a place like no other. Home to a number of tribal communities, the variety and diversity of life - truly a melting pot of humanity - will blow you away. We think it's a must-visit if
+                                you want to understand Ethiopia and Africa more broadly. The concentration of experience and variety, often so juxtaposed to your own daily life, forces you to reflect on what it means to be human in today's world.
+                            </p>
 
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <img src="./images/lalibel-main.jpg" class="img-fluid" alt="Image 1">
-                                        </div>
-                                        <div class="col-md-4">
-                                            <img src="images/lalibela-book.avif" class="img-fluid" alt="Image 2">
-                                        </div>
-                                        <div class="col-md-4">
-                                            <img src="./images/lalibela-wall.avif" class="img-fluid" alt="Image 3">
-                                        </div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="./images/omo-main.avif" class="img-fluid" alt="Image 1">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="images/Omo-2.avif" class="img-fluid" alt="Image 2">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="./images/omo-3.avif" class="img-fluid" alt="Image 3">
                                     </div>
                                 </div>
-
-
-                                <div id="bale">
-                                    <h2>Bale Mountains National Park
-                                    </h2>
-                                    <p>
-                                        Rising over 4,000 metres, the Afro-Alpine plateau of the Bale Mountains is the highest mountainous area in southern Ethiopia. The beautiful Bale Mountain Lodge - nestled into the thickets of the Harenna Forest - is one Ethiopia's best boutique lodges.
-                                        It's the perfect place to return for sun-downers by the roaring fire after a day's exploring.
-                                    </p>
-
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-md-4">
-                                                <img src="./images/bale-main.avif" class="img-fluid" alt="Image 1">
-                                            </div>
-                                            <div class="col-md-4">
-                                                <img src="images/bale-2.avif" class="img-fluid" alt="Image 2">
-                                            </div>
-                                            <div class="col-md-4">
-                                                <img src="./images/bale-3.avif" class="img-fluid" alt="Image 3">
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                </div>
-                                <div id="omo">
-                                    <h2>Omo valley
-                                    </h2>
-                                    <p>
-                                        The Omo Valley, often more precisely called the Lower Omo Valley, is a place like no other. Home to a number of tribal communities, the variety and diversity of life - truly a melting pot of humanity - will blow you away. We think it's a must-visit if
-                                        you want to understand Ethiopia and Africa more broadly. The concentration of experience and variety, often so juxtaposed to your own daily life, forces you to reflect on what it means to be human in today's world.
-                                    </p>
-
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-md-4">
-                                                <img src="./images/omo-main.avif" class="img-fluid" alt="Image 1">
-                                            </div>
-                                            <div class="col-md-4">
-                                                <img src="images/Omo-2.avif" class="img-fluid" alt="Image 2">
-                                            </div>
-                                            <div class="col-md-4">
-                                                <img src="./images/omo-3.avif" class="img-fluid" alt="Image 3">
-                                            </div>
-                                        </div>
-                                    </div>
+                            </div>
         </section>
+        =======
+        </div>
+
+        <div class="image-container">
+            <div class="image">
+                <img src="./images/bale-main.avif" class="img-fluid" alt="Image 1">
+            </div>
+            <div class="image">
+                <img src="images/bale-2.avif" class="img-fluid" alt="Image 2">
+            </div>
+            <div class="image">
+                <img src="./images/bale-3.avif" class="img-fluid" alt="Image 3">
+            </div>
+
+            <span class="right-icon" onclick="changeIdx(15, 1)"><i class="fa fa-chevron-right" aria-hidden="true"></i>
+                            </span>
+            <span class="left-icon" onclick="changeIdx(15, -1)"><i class="fa fa-chevron-left" aria-hidden="true"></i>
+                            </span>
+        </div>
+
+
+
+        </div>
+        <div class="place" id="omo">
+            <div class="description">
+                <h2>Omo valley
+                </h2>
+                <p>
+                    The Omo Valley, often more precisely called the Lower Omo Valley, is a place like no other. Home to a number of tribal communities, the variety and diversity of life - truly a melting pot of humanity - will blow you away. We think it's a must-visit if
+                    you want to understand Ethiopia and Africa more broadly. The concentration of experience and variety, often so juxtaposed to your own daily life, forces you to reflect on what it means to be human in today's world.
+                </p>
+            </div>
+
+            <div class="image-container">
+                <div class="image">
+                    <img src="./images/omo-main.avif" class="img-fluid" alt="Image 1">
+                </div>
+                <div class="image">
+                    <img src="images/Omo-2.avif" class="img-fluid" alt="Image 2">
+                </div>
+                <div class="image">
+                    <img src="./images/omo-3.avif" class="img-fluid" alt="Image 3">
+                </div>
+
+                <span class="right-icon" onclick="changeIdx(18, 1)"><i class="fa fa-chevron-right" aria-hidden="true"></i>
+                            </span>
+                <span class="left-icon" onclick="changeIdx(18, -1)"><i class="fa fa-chevron-left" aria-hidden="true"></i>
+                            </span>
+            </div>
+
+        </div>
+        </section>
+        >>>>>>> 0df834dec4a8e24132fb5a8f97e7743c0491fe33
     </main>
 
     <footer class="" style="background-color: black;">
@@ -392,5 +573,44 @@
         </div>
     </footer>
 </body>
+<script>
+    let idx = 0;
+    let right = document.getElementsByClassName("right-icon");
+    let left = document.getElementsByClassName("left-icon");
+
+    function changeIdx(ini, change) {
+        idx += change;
+        if (idx > 2) {
+            idx = 0;
+        }
+
+        if (idx < 0) {
+            idx = 2;
+        }
+        changeSlide(ini, idx)
+    }
+
+    let images = document.getElementsByClassName("image");
+
+    function changeSlide(ini, idx) {
+
+        for (let i = 0; i < 3; i++) {
+            images[+ini + i].style.display = "none";
+        }
+        images[+ini + idx].style.display = "block"
+    }
+
+    changeSlide(0, 0);
+    changeSlide(3, 0);
+    changeSlide(6, 0);
+    changeSlide(9, 0);
+    changeSlide(12, 0);
+    changeSlide(15, 0);
+    changeSlide(18, 0);
+</script>
+</body>
+
+</html>
+</script>
 
 </html>

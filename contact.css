@@ -1,0 +1,55 @@
+body{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 2em;
+}
+
+.title{
+    margin: 2em;
+    border-top: .2em solid #ccc;
+    padding-top: 1em;
+    max-width: 82em;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.form{
+    max-width: 82em;
+    box-shadow: 0 0 1em #aaa;
+    margin: 2em;
+    padding: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1em;
+    background: linear-gradient(to bottom, white, #ddd);
+}
+.form-group{
+    margin-top: .5em;
+}
+.form-control{
+    margin-bottom: .2em;
+    border-radius: 2em;
+}
+
+.form-group label{
+    margin-bottom: .2em;
+    margin-left: .5em;
+}
+.comment{
+    border-radius: 1em;
+    height: 8em;
+    resize: none;
+}
+.btn{
+    background-color: #000;
+    border: none;
+    margin-top: 2em;
+    color: white;
+    padding: .5em 1.5em;
+    border-radius: 2em;
+}
+.btn:hover{
+    background-color: white;
+    outline: 1px solid #555;
+}

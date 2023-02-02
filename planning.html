@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="planning.css">
+    <link rel="stylesheet" href="explore.css">
     <script src="./bootstrap.bundle.min.js" defer></script>
 
     <style>
@@ -72,8 +74,12 @@
         </section>
 
         <section class="hotels">
-            <h3>Sheraton</h3>
-            <a href="https://www.google.com/maps/dir/9.0339143,38.7649873/Sheraton+Addis/@9.0292606,38.7544328,15z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x164b85930b17ec2f:0x8a433f2230326db!2m2!1d38.7600027!2d9.0203037">Map</a>
+          <div class="place">
+            <div>
+              <h3>Sheraton</h3>
+              <a href="https://www.google.com/maps/dir/9.0339143,38.7649873/Sheraton+Addis/@9.0292606,38.7544328,15z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x164b85930b17ec2f:0x8a433f2230326db!2m2!1d38.7600027!2d9.0203037">Show on Maps</a>
+            </div>
+            
             <div class="container">
                 <div class="row">
                   <div class="col-md-4">
@@ -87,8 +93,13 @@
                   </div>
                 </div>
             </div>
-            <h3>Hilton</h3>
-            <a href="https://www.google.com/maps/dir//hilton+hotel/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x164b8596e4447f7d:0x7d2d64a64dc9c36f?sa=X&ved=2ahUKEwi13J2Bupn8AhXjQeUKHf5KA2wQ9Rd6BAh6EAQ">Map</a>
+          </div>
+            <div class="place">
+              <div>
+                <h3>Hilton</h3>
+            <a href="https://www.google.com/maps/dir//hilton+hotel/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x164b8596e4447f7d:0x7d2d64a64dc9c36f?sa=X&ved=2ahUKEwi13J2Bupn8AhXjQeUKHf5KA2wQ9Rd6BAh6EAQ">Show on Maps</a>
+              </div>
+              
             <div class="container mb-4">
                 <div class="row">
                   <div class="col-md-4">
@@ -102,13 +113,15 @@
                   </div>
                 </div>
             </div>
+            </div>
+            
         </section>
 
         <section class="transport">
             <h2>Public Transport</h3>
 
-              <table class="table">
-                <thead>
+              <table class="table table-striped ">
+                <thead class="bg-dark text-white">
                   <tr>
                     <th scope="col">Type</th>
                     <th scope="col">Source</th>

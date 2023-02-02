@@ -12,6 +12,7 @@
 
 
     <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="explore.css">
     <script src="./bootstrap.bundle.min.js" defer></script>
 
     <style>
@@ -19,78 +20,55 @@
             overflow-x: hidden;
         }
 
-        .map-container a {
-            text-decoration: none;
-            color: black;
-            letter-spacing: 2px;
-            font-size: large;
-            /* text-shadow: 2px 2px 2px 2px white; */
-            font-weight: bold;
-
-        }
-
-        .map-container {
-            width: 100vw;
-            height: 90vh;
-            /* background-color: red; */
-            /* background-image: url('../images/the-map.png'); */
-            background-position: center;
-            background-repeat: no-repeat;
+        .image-container{
             position: relative;
-            background-color: white;
-
+            width: 350px;
+            height: 300px;
+            display: grid;
+            place-items: center; 
+        }
+        .place{
+          display: flex;
+          justify-content: space-evenly;
+        }
+        .description{
+          padding-top: 20px;
+        }
+        .image{
+            width: 300px;
+            height: 300px;
+            transition: all .3s;
         }
 
-        .map-container img {
+        .image-container img{
             width: 100%;
             height: 100%;
+            border-radius: 10%;
         }
 
-        .seimen {
+        .right-icon, .left-icon{
+            padding: 10px;
+            font-size: 2em;
+            transition: all .4s;
             position: absolute;
-            top: 20%;
-            left: 25%;
+            cursor: pointer;
+        }   
+        .right-icon{
+            right: -20px;
+            top: 40%;
+        }
+        .left-icon{
+            left: -20px;
+            top: 40%;
+        }
+        .right-icon:hover{
+            background-color: rgb(114, 92, 92);
+            color: white;
         }
 
-        .bale {
-            position: absolute;
-            top: 70%;
-            left: 25%;
-        }
-
-        .omo {
-            position: absolute;
-            bottom: 10%;
-            left: 55%;
-        }
-
-        .axum {
-            position: absolute;
-            top: 10%;
-            left: 45%;
-        }
-
-        .danakil {
-            position: absolute;
-            top: 55%;
-            left: 70%;
-        }
-
-        .lalibela {
-            position: absolute;
-            top: 35%;
-            left: 46%;
-        }
-        
-
-        .col-md-4{
-            height: 220px;
-        }
-
-        main img{
-            display: block;
-            width: 100%;
-            max-height: 100%;
+        .left-icon:hover{
+            background-color: rgb(129, 97, 97);
+            color: white;
         }
     </style>
 
@@ -162,7 +140,8 @@
 
 
         <section class="note_section container">
-            <div id="lalibela">
+            <div class="place" id="lalibela">
+              <div class="description px-5">
                 <h2>Lalibela</h2>
                 <p>
                     Lalibela is one of Ethiopia's most magical destinations. For many, it is the absolute highlight of
@@ -174,25 +153,32 @@
                     farthest corners of the town.
                     The kindness of a local priest, who upon noticing you, brings you a gown as the service begins.
                 </p>
+              </div>
+                
 
 
-                <div class="container">
-                    <div class="row">
-                      <div class="col-md-4">
+                <div class="image-container">
+                      <div class="image">
                         <img src="./images/lalibel-main.jpg" class="img-fluid" alt="Image 1">
                       </div>
-                      <div class="col-md-4">
+                      <div class="image">
                         <img src="images/lalibela-book.avif" class="img-fluid" alt="Image 2">
                       </div>
-                      <div class="col-md-4">
+                      <div class="image">
                         <img src="./images/lalibela-wall.avif" class="img-fluid" alt="Image 3">
                       </div>
-                    </div>
+
+                      <span class="right-icon" onclick="changeIdx(0, 1)"><i class="fa fa-chevron-right" aria-hidden="true"></i>
+                      </span>
+                      <span class="left-icon" onclick="changeIdx(0, -1)"><i class="fa fa-chevron-left" aria-hidden="true"></i>
+                      </span>
                 </div>
 
+            </div>
         
         <!-- Modal gallery -->
-        <div id="simien">
+        <div class="place" id="simien">
+          <div class="description">
             <h2>Simien Mountains National Park</h2>
             <p>
                 The Simien Mountains are one of Ethiopia’s most popular destinations. Sitting just north of
@@ -200,23 +186,30 @@
                 kilometres of peaks, plateaus, vistas and valleys, the park offers stunning viewpoints and some
                 of the best trekking routes in Africa.
             </p>
-
-            <div class="container">
-                <div class="row">
-                  <div class="col-md-4">
-                    <img src="./images/simein-main.avif" class="img-fluid" alt="Image 1">
-                  </div>
-                  <div class="col-md-4">
-                    <img src="images/simein-monkey.avif" class="img-fluid" alt="Image 2">
-                  </div>
-                  <div class="col-md-4">
-                    <img src="./images/simein-people.avif" class="img-fluid" alt="Image 3">
-                  </div>
-                </div>
+          </div>
+          
+          <div class="image-container">
+            <div class="image">
+              <img src="./images/simein-main.avif" class="img-fluid" alt="Image 1">
+            </div>
+            <div class="image">
+              <img src="images/simein-monkey.avif" class="img-fluid" alt="Image 2">
+            </div>
+            <div class="image">
+              <img src="./images/simein-people.avif" class="img-fluid" alt="Image 3">
             </div>
 
+            <span class="right-icon" onclick="changeIdx(3, 1)"><i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </span>
+            <span class="left-icon" onclick="changeIdx(3, -1)"><i class="fa fa-chevron-left" aria-hidden="true"></i>
+            </span>
+          </div>
 
-            <div id="danakil">
+          </div>
+
+            <div  class="place" id="danakil" >
+              
+              <div class="description">
                 <h2>Danakil Depression</h2>
                 <p>
                     The Danakil Depression formed from the continental drift of the African and Asian tectonic
@@ -228,22 +221,27 @@
                     and contains some of the world’s most extraterrestrial landscapes.
                 </p>
 
-                <div class="container">
-                    <div class="row">
-                      <div class="col-md-4">
-                        <img src="./images/danakil-main.avif" class="img-fluid" alt="Image 1">
-                      </div>
-                      <div class="col-md-4">
-                        <img src="images/danakil-2.avif" class="img-fluid" alt="Image 2">
-                      </div>
-                      <div class="col-md-4">
-                        <img src="./images/danakil-3.avif" class="img-fluid" alt="Image 3">
-                      </div>
-                    </div>
+              </div>
+              <div class="image-container">
+                <div class="image">
+                  <img src="./images/danakil-main.avif" class="img-fluid" alt="Image 1">
                 </div>
+                <div class="image">
+                  <img src="images/danakil-2.avif" class="img-fluid" alt="Image 2">
+                </div>
+                <div class="image">
+                  <img src="./images/danakil-3.avif" class="img-fluid" alt="Image 3">
+                </div>
+    
+                <span class="right-icon" onclick="changeIdx(6, 1)"><i class="fa fa-chevron-right" aria-hidden="true"></i>
+                </span>
+                <span class="left-icon" onclick="changeIdx(6, -1)"><i class="fa fa-chevron-left" aria-hidden="true"></i>
+                </span>
+              </div>
+            </div>
 
-
-                <div id="axum">
+                <div class="place" id="axum">
+                  <div class="description">
                     <h2>Axum</h2>
                     <p>
                         As the home to the Queen of Sheba and (as the story goes) the Ark of the Covenant the
@@ -254,23 +252,29 @@
                         but sadly many had been plundered by tomb raiders and only one such grave, The Tomb of
                         the False Door, is now open to visitors.
                     </p>
-
-                    <div class="container">
-                        <div class="row">
-                          <div class="col-md-4">
-                            <img src="./images/Axum-main.avif" class="img-fluid" alt="Image 1">
-                          </div>
-                          <div class="col-md-4">
-                            <img src="images/axum-2.avif" class="img-fluid" alt="Image 2">
-                          </div>
-                          <div class="col-md-4">
-                            <img src="./images/Axum-3.avif" class="img-fluid" alt="Image 3">
-                          </div>
-                        </div>
+                  </div>
+                    
+                  <div class="image-container">
+                    <div class="image">
+                      <img src="./images/Axum-main.avif" class="img-fluid" alt="Image 1">
                     </div>
-    
+                    <div class="image">
+                      <img src="images/axum-2.avif" class="img-fluid" alt="Image 2">
+                    </div>
+                    <div class="image">
+                      <img src="./images/Axum-3.avif" class="img-fluid" alt="Image 3">
+                    </div>
+        
+                    <span class="right-icon" onclick="changeIdx(9, 1)"><i class="fa fa-chevron-right" aria-hidden="true"></i>
+                    </span>
+                    <span class="left-icon" onclick="changeIdx(9, -1)"><i class="fa fa-chevron-left" aria-hidden="true"></i>
+                    </span>
+                  </div>
 
-                    <div id="danakil">
+                  </div>
+
+                    <div class="place" id="danakil">
+                      <div class="description">
                         <h2>Danakil Depression</h2>
                         <p>
                             The Danakil Depression formed from the continental drift of the African and Asian
@@ -283,23 +287,29 @@
                             100m below sea level and contains some of the world’s most extraterrestrial
                             landscapes.
                         </p>
-
-                        <div class="container">
-                            <div class="row">
-                              <div class="col-md-4">
-                                <img src="./images/lalibel-main.jpg" class="img-fluid" alt="Image 1">
-                              </div>
-                              <div class="col-md-4">
-                                <img src="images/lalibela-book.avif" class="img-fluid" alt="Image 2">
-                              </div>
-                              <div class="col-md-4">
-                                <img src="./images/lalibela-wall.avif" class="img-fluid" alt="Image 3">
-                              </div>
-                            </div>
+                      </div>
+                        
+                      <div class="image-container">
+                        <div class="image">
+                          <img src="./images/lalibel-main.jpg" class="img-fluid" alt="Image 1">
                         </div>
+                        <div class="image">
+                          <img src="images/lalibela-book.avif" class="img-fluid" alt="Image 2">
+                        </div>
+                        <div class="image">
+                          <img src="./images/lalibela-wall.avif" class="img-fluid" alt="Image 3">
+                        </div>
+            
+                        <span class="right-icon" onclick="changeIdx(12, 1)"><i class="fa fa-chevron-right" aria-hidden="true"></i>
+                        </span>
+                        <span class="left-icon" onclick="changeIdx(12, -1)"><i class="fa fa-chevron-left" aria-hidden="true"></i>
+                        </span>
+                      </div>
+                        
         
-
-                        <div id="bale">
+                    </div>
+                        <div class="place" id="bale">
+                          <div class="description">
                             <h2>Bale Mountains National Park
                             </h2>
                             <p>
@@ -310,24 +320,30 @@
                                 Forest - is one Ethiopia's best boutique lodges. It's the perfect place to
                                 return for sun-downers by the roaring fire after a day's exploring.
                             </p>
-
-                            <div class="container">
-                                <div class="row">
-                                  <div class="col-md-4">
-                                    <img src="./images/bale-main.avif" class="img-fluid" alt="Image 1">
-                                  </div>
-                                  <div class="col-md-4">
-                                    <img src="images/bale-2.avif" class="img-fluid" alt="Image 2">
-                                  </div>
-                                  <div class="col-md-4">
-                                    <img src="./images/bale-3.avif" class="img-fluid" alt="Image 3">
-                                  </div>
-                                </div>
+                          </div>
+                            
+                          <div class="image-container">
+                            <div class="image">
+                              <img src="./images/bale-main.avif" class="img-fluid" alt="Image 1">
                             </div>
+                            <div class="image">
+                              <img src="images/bale-2.avif" class="img-fluid" alt="Image 2">
+                            </div>
+                            <div class="image">
+                              <img src="./images/bale-3.avif" class="img-fluid" alt="Image 3">
+                            </div>
+                
+                            <span class="right-icon" onclick="changeIdx(15, 1)"><i class="fa fa-chevron-right" aria-hidden="true"></i>
+                            </span>
+                            <span class="left-icon" onclick="changeIdx(15, -1)"><i class="fa fa-chevron-left" aria-hidden="true"></i>
+                            </span>
+                          </div>
+              
             
 
                         </div>
-                        <div id="omo">
+                        <div class="place" id="omo">
+                          <div class="description">
                             <h2>Omo valley
                             </h2>
                             <p>
@@ -339,20 +355,26 @@
                                 The concentration of experience and variety, often so juxtaposed to your own
                                 daily life, forces you to reflect on what it means to be human in today's world.
                             </p>
-
-                            <div class="container">
-                                <div class="row">
-                                  <div class="col-md-4">
-                                    <img src="./images/omo-main.avif" class="img-fluid" alt="Image 1">
-                                  </div>
-                                  <div class="col-md-4">
-                                    <img src="images/Omo-2.avif" class="img-fluid" alt="Image 2">
-                                  </div>
-                                  <div class="col-md-4">
-                                    <img src="./images/omo-3.avif" class="img-fluid" alt="Image 3">
-                                  </div>
-                                </div>
+                          </div>
+                            
+                          <div class="image-container">
+                            <div class="image">
+                              <img src="./images/omo-main.avif" class="img-fluid" alt="Image 1">
                             </div>
+                            <div class="image">
+                              <img src="images/Omo-2.avif" class="img-fluid" alt="Image 2">
+                            </div>
+                            <div class="image">
+                              <img src="./images/omo-3.avif" class="img-fluid" alt="Image 3">
+                            </div>
+                
+                            <span class="right-icon" onclick="changeIdx(18, 1)"><i class="fa fa-chevron-right" aria-hidden="true"></i>
+                            </span>
+                            <span class="left-icon" onclick="changeIdx(18, -1)"><i class="fa fa-chevron-left" aria-hidden="true"></i>
+                            </span>
+                          </div>
+                            
+                        </div>
                         </section>
     </main>
 
@@ -376,5 +398,43 @@
 
     </footer>
 </body>
+<script>
+  let idx = 0;
+  let right = document.getElementsByClassName("right-icon");
+  let left = document.getElementsByClassName("left-icon");
 
+  function changeIdx(ini, change){
+      idx += change;
+      if (idx > 2){
+          idx = 0;
+      } 
+
+      if(idx < 0) {
+          idx = 2;
+      }
+      changeSlide(ini, idx)
+  }
+
+  let images = document.getElementsByClassName("image");
+  function changeSlide(ini, idx){
+
+  for (let i = 0; i < 3 ; i++){
+      images[+ini + i].style.display = "none";
+  }
+  images[+ini + idx].style.display = "block"
+  }
+
+  changeSlide(0, 0);
+  changeSlide(3, 0);
+  changeSlide(6, 0);
+  changeSlide(9, 0);
+  changeSlide(12, 0);
+  changeSlide(15, 0);
+  changeSlide(18, 0);
+
+
+</script>
+</body>
+</html>
+  </script>
 </html>

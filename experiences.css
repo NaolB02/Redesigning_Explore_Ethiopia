@@ -1,0 +1,13 @@
+.slide{
+    max-width: 82em;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn-group{
+    max-width: 82em;
+}
+.buttons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
